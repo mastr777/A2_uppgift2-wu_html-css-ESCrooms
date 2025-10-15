@@ -1,14 +1,27 @@
 
 /* CSS for ESC - Hacker Escape Rooms, site */
 
-html { font-size: 20px; padding: 0; margin: 0; }
+html { 
+    font-size: 1rem;
+    padding: 0; 
+    margin: 0; 
+    overflow: hidden; 
+}
 
 body { 
     padding: 0;
     margin: 0;
+    overflow: hidden;
+    font-family: Roboto, system-ui, 
+            -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Oxygen, Ubuntu, Cantarell, 
+            'Open Sans', 'Helvetica Neue', sans-serif;
  }
 
 .container { 
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: none;
     margin: 0 auto;
     max-width: 1280px;
     width: 100%;
@@ -17,12 +30,52 @@ body {
 
  .header { 
     width: 100%;
-    height: 216px;
+    height: 144px;
     background-color: #011827;
   }
 
-  .one {
-    width: 100%;
-    height: 468px;
+  h1 { 
+    display: inline-block;
+    margin: 0;
+    padding-top: 26px;
+    color: white;
+  }
+
+  .oneSec {
+    width: 480px;
+    height: 274px;
     background-image: url('esc_imgs/ESC_section-img_BIG.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .oneFlex {
+    max-width: 380px;
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    padding-top: 20px;
+  }
+
+  .twoFlex {
+    max-width: 380px;
+    height: 140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aqua;
+    padding-top: 20px;
+    position: relative;
+  }
+
+  .buttonChallengeOne {
+    width: 308px;
+    height: 66px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #8ACFE5;
+    border: 0;
+/*     position: absolute;
+    top: -20px; */
   }
