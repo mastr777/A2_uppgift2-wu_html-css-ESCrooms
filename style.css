@@ -7,9 +7,15 @@ html {
     margin: 0;
   }
 
+:root {
+  --darkerBlueColor: #36769D;
+  --lightblueColor: #8ACFE5;
+  }
+
 body { 
     padding: 0;
     margin: 0;
+    background-color: snow;
     font-family: Roboto, system-ui, 
       -apple-system, BlinkMacSystemFont, 
       'Segoe UI', Oxygen, Ubuntu, Cantarell, 
@@ -44,7 +50,7 @@ h1.styleHone {
   color: white;
   }
   
-h1>span {
+h1 span {
   display: block;
   }
   
@@ -61,7 +67,7 @@ h1>span {
     padding: 31px;
     position: absolute;
     top: 0px;
-    left: 38%;
+    left: 36%;
   }
 
 /* END (HEADER CONTENT) ------------------------------------------------------------------------------- */
@@ -134,12 +140,27 @@ h1>span {
   padding-left: 40px;
   }
 
-  .threeFlexTwo {
+.threeFlexTwo {
     display: inline-block;
     width: 300px;
   }
 
-  .justAtripleImage {
+.justAtripleImage {
     width: 100%;
     height: auto;
   }
+
+.secondNav {
+    text-align: left;
+  }
+
+.secondNavSpan {
+    display: block;
+  }
+
+@media only screen and (max-width: 480px) {
+.container {
+  width: vw100;
+  max-width: 480px;
+}
+}
