@@ -10,6 +10,7 @@ html {
 :root {
   --darkerBlueColor: #36769D;
   --lightblueColor: #8ACFE5;
+  --redColor: #E3170A;
   }
 
 body { 
@@ -84,7 +85,7 @@ h1 span {
 
   .firstNav { 
     text-align: center;
-    content-visibility: hidden;
+    display: none;
   }
 
 .firstNavSpan {
@@ -103,7 +104,7 @@ h1 span {
   }
 
 .oneFlexOne {
-    height: 140px;
+    height: 350px;
     text-align: center;
     background-color: rgb(153, 122, 122);
     padding-top: 20px;
@@ -122,7 +123,20 @@ h1 span {
     height: 66px;
     font-size: 1.2em;
     font-weight: 600;
-    background-color: #8ACFE5;
+    background-color: var(--lightblueColor);
+    border: 0;
+    border-radius: 4px;
+/*     position: absolute;
+    top: -20px; */
+  }
+
+  .buttonChallengeTwo {
+    display: none;
+    width: 308px;
+    height: 66px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: var(--redColor);
     border: 0;
 /*     position: absolute;
     top: -20px; */
