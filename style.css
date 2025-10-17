@@ -74,9 +74,9 @@ h1 span {
 
 
 .oneSec {
-    width: 480px;
+    width: vw100;
     height: 274px;
-    background-image: url('esc_imgs/ESC_section-img_BIG.png');
+    background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,5 +162,16 @@ h1 span {
 .container {
   width: vw100;
   max-width: 480px;
+  }
 }
+
+@media only screen and (max-width: 840px) {
+.oneSec {
+    width: vw100;
+    height: 274px;
+    background-image: url('esc_imgs/ESC_section-img_SMALL_sp.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
