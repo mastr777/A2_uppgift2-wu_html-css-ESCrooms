@@ -1,11 +1,9 @@
 
 /* CSS for ESC - Hacker Escape Rooms, site */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
-
-html { 
+html {
   font-size: 1rem;
-  padding: 0; 
+  padding: 0;
   margin: 0;
 }
 
@@ -13,20 +11,22 @@ html {
   --darkerBlueColor: #36769D;
   --lightblueColor: #8ACFE5;
   --redColor: #E3170A;
+  --blackColor: #011827;
 }
 
-body { 
+body {
   padding: 0;
   margin: 0;
   background-color: snow;
-  font-family: "Roboto", sans-serif; /* Roboto, system-ui, 
+  font-family: 'roboto', sans-serif;
+  /* Roboto, system-ui, 
     -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif; */
-   color: #011827;
+  color: var(--blackColor);
 }
 
-.container { 
+.container {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: none;
@@ -41,19 +41,27 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
 
- /* HEADER CONTENT -------------------------------------------------------------------------------------- */
 
-.header { 
+/* HEADER CONTENT -------------------------------------------------------------------------------------- */
+
+.header {
   width: 100%;
   height: 144px;
-  background-color: #011827;
-  position: relative;
+  background-color: var(--blackColor);
   text-align: left;
+  position: relative;
 }
 
 .insideHeaderDiv {
   width: vw100;
+  height: 110px;
 }
 
 .inlineBlock1 {
@@ -82,180 +90,274 @@ h1.styleHone {
   line-height: 1.2;
   color: white;
 }
-  
+
 h1 span {
   display: block;
 }
 
-
 /* END (HEADER CONTENT) ------------------------------------------------------------------------------- */
 
+/* FIRST Navigation area ------------------------------------------------------------------------------ */
 
 .oneSec {
-    width: vw100;
-    height: 274px;
-    background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  width: vw100;
+  height: 274px;
+  background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-  .firstNav { 
-    text-align: center;
-    display: none;
-  }
+.firstNav {
+  text-align: center;
+  display: none;
+}
 
 .firstNavSpan {
-    display: inline-block;
-    padding: 10px 20px 0 20px;
-  }
+  display: inline-block;
+  padding: 10px 20px 0 20px;
+}
 
-  .twoButtons {
-    width: vw100;
-    margin-top: 40px;
-    text-align: center;
-  }
+/* END (FIRST Navigation area) ------------------------------------------------------------------------- */
 
-  .buttonChallengeOne {
-    width: 308px;
-    height: 66px;
-    margin: 0 auto;
-    font-size: 1.3em;
-    font-weight: 600;
-    background-color: var(--lightblueColor);
-    border: 0;
-    border-radius: 4px;
-/*     position: absolute;
-    top: -20px; */
-  }
+/* FIRST TWO buttons ----------------------------------------------------------------------------------- */
 
-  .buttonChallengeTwo {
-    display: none;
-    width: 308px;
-    height: 66px;
-    margin: 0 auto;
-    font-size: 1.3em;
-    font-weight: 600;
-    color: white;
-    background-color: var(--redColor);
-    border: 0;
-/*     position: absolute;
-    top: -20px; */
-  }
+.twoButtons {
+  width: vw100;
+  max-width: 635px;
+  padding-top: 40px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: #36769D;
+}
+
+.buttonChallengeOne {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  margin: 0 auto;
+  font-size: 1.3em;
+  font-weight: 600;
+  background-color: var(--lightblueColor);
+  border: 0;
+  border-radius: 5px;
+  position: static;
+  top: -20px;
+}
+
+.buttonChallengeTwo {
+  display: none;
+  width: 308px;
+  height: 66px;
+  margin: 0 auto;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  background-color: var(--redColor);
+  border: 0;
+  border-radius: 5px;
+}
+
+/* END (FIRST TWO buttons) ------------------------------------------------------------------------------ */
+
+/* SECOND TWO buttons ----------------------------------------------------------------------------------- */
+
+.twoButtons2 {
+  width: vw100;
+  height: 90px;
+  max-width: 635px;
+  padding: 30px 0 80px 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: #36769D;
+}
+
+.buttonChallengeOne2 {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0 auto;
+  background-color: var(--lightblueColor);
+  border: 0;
+  border-radius: 5px;
+}
+
+.buttonChallengeTwo2 {
+  display: none;
+  width: 308px;
+  height: 66px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  background-color: var(--redColor);
+  border: 0;
+  border-radius: 5px;
+}
+
+/* END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
+
+
+.twoSec {
+  width: vw100;
+  height: 500px;
+  background-color: var(--blackColor);
+}
 
 
 /* FLEX ONE/2 CONTENT ----------------------------------------------------------------------------------- */
 
-.flexOne { 
-    display: flex;
-    width: vw100;
-    flex-direction: column;
-    flex-wrap:nowrap;
-    position: relative;
-  }
+.flexOne {
+  display: flex;
+  width: vw100;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: relative;
+}
 
-  .siteReviews {
-    height: 250px;
-    max-width: 460px;
-    text-align: left;
-    margin-top: 20px;
-    background-color: aquamarine;
-  }
+.siteReviews {
+  height: 250px;
+  max-width: 460px;
+  text-align: left;
+  margin-top: 20px;
+  background-color: aquamarine;
+}
 
 .oneFlexOne {
-    height: 400px;
-    margin-left: auto;
-    padding: 10px 0 20px 0;
+  height: 260px;
+  margin-left: auto;
+  padding: 10px 0 20px 0;
+  background-color: red;
 
-  }
+}
 
-  .twoFlexOne {
-    height: 400px;
-    margin-right: auto;
-    padding: 30px 0 20px 0;
-    background-color: aqua;
-  }
+.twoFlexOne {
+  height: 260px;
+  margin-right: auto;
+  padding: 10px 0 20px 0;
+  background-color: aqua;
+}
 
-  .siteReviewsDiv1 {
-    float: left;
-    width: 114px;
-    height: 250px;
-  }
+.siteReviewsDiv1 {
+  float: left;
+  width: 114px;
+  height: 250px;
+}
 
-  .siteReviewsDiv2 {
-    width: auto;
-    height: 250px;
-  }
+.siteReviewsDiv2 {
+  width: auto;
+  height: 250px;
+}
 
-   .quoteText {
-    font-size: 1.47em;
-    font-style: italic;
-    padding: 9px 24px 0 0;
-    word-wrap: break-all;
-  }
+.quoteText {
+  font-size: 1.47em;
+  font-style: italic;
+  padding: 9px 24px 0 0;
+  word-wrap: break-all;
+}
 
-  .quoteTextWho {
-    font-size: 1.16em;
-    padding: 5px 0 0 0;
-  }
+.quoteTextWho {
+  font-size: 1.16em;
+  padding: 5px 0 0 0;
+}
 
-  img.siteReviewsImage {
-    width: 72px;
-    padding: 12px 0 0 20px;
-  }
+img.siteReviewsImage {
+  width: 72px;
+  padding: 12px 0 0 20px;
+}
+
+.siteReviewsTimeBlock {
+  display: inline-block;
+}
 
 /* END (FLEXBOX ONE CONTENT) -------------------------------------------------------------------------- */
 
-
 /* FLEX TWO/3 CONTENT ----------------------------------------------------------------------------------- */
 
-.flexTwo { 
+.flexTwo {
   display: flex;
-  width: 1280px;
+  max-width: vw100;
+  height: 600px;
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 40px;
-  }
+  background-color: bisque;
+}
+
+.popularChallengesWrapper {
+  margin: 0 auto;
+  display: inline-block;
+  overflow: auto;
+  white-space: nowrap;
+}
 
 .threeFlexTwo {
-    display: inline-block;
-    width: 300px;
-  }
+  display: inline-block;
+  width: 400px;
+}
 
-.justAtripleImage {
-    width: 100%;
-    height: auto;
-  }
+img.justAtripleImage {
+  width: 362;
+  height: auto;
+}
 
 .secondNav {
-    text-align: left;
-  }
+  text-align: left;
+}
 
 .secondNavSpan {
-    display: block;
-  }
+  display: block;
+}
+
+
+/* @media queries ----------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 480px) {
-.container {
+  .container {
     width: vw100;
     max-width: 480px;
   }
 
-.oneFlexOne {
+  .oneFlexOne {
     margin-left: 0;
   }
 
-.twoFlexOne {
-  display: none;
+  .twoFlexOne {
+    display: none;
   }
-  }
-
-@media only screen and (min-width: 700px) {
-.header {
-    height: 216px;
 }
 
-.oneSec {
+@media only screen and (min-width: 700px) {
+  .header {
+    height: 216px;
+  }
+
+  .inlineBlock2 {
+  width: 500px;
+  padding: 24px 0 0 0;
+  position: absolute;
+  left: 178px;
+  top: 33px;
+}
+
+  h1.styleHone {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  font-weight: 500;
+  line-height: 1.2;
+  color: white;
+}
+
+h1 span {
+  display: unset;
+}
+
+  .oneSec {
     width: vw100;
     height: 468px;
     background-image: url('esc_imgs/ESC_section-img_BIG.png');
@@ -264,23 +366,76 @@ h1 span {
     background-repeat: no-repeat;
   }
 
- .buttonChallengeTwo {
-    display: block;
- }
+  .twoButtons {
+    height: 70px;
+  }
 
- .flexOne {
+  .buttonChallengeTwo {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+    top: -35px;
+  }
+
+  .buttonChallengeOne {
+    position: absolute;
+    right: 0;
+    top: -35px;
+  }
+
+  .linkHidden {
+    display: none;
+  }
+
+  .twoButtons2 {
+    height: 80px;
+    padding-top: 60px;
+  }
+
+  .buttonChallengeTwo2 {
+    display: inline-block;
+    left: 0;
+    position: absolute;
+  }
+
+  .buttonChallengeOne2 {
+    position: absolute;
+    right: 0;
+  }
+
+  .linkHidden2 {
+    display: none;
+  }
+
+  .flexOne {
     flex-direction: row;
- }
+  }
 
- .oneFlexOne {
+  .oneFlexOne {
     margin-left: auto;
   }
-  
-.twoFlexOne {
-  display: block;
+
+  .twoFlexOne {
+    display: block;
   }
 
   .siteReviews {
-    max-width: 600px;
+    max-width: 560px;
   }
+
+  .siteReviewsDiv1 {
+    width: 130px;
   }
+
+  .quoteTextWho {
+    padding: 14px 0 0 0;
+  }
+
+  img.siteReviewsImage {
+    width: 94px;
+  }
+
+  .siteReviewsTimeBlock {
+    display: block;
+  }
+}
