@@ -106,10 +106,10 @@ h1 span {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .firstNav {
-  text-align: center;
   display: none;
 }
 
@@ -334,6 +334,10 @@ img.justAtripleImage {
 @media only screen and (min-width: 700px) {
   .header {
     height: 216px;
+  }
+
+  .firstNav {
+    display: inline-block;
   }
 
   .inlineBlock2 {
