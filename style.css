@@ -43,13 +43,6 @@ p {
   margin: 0;
 }
 
-h2 {
-  font-size: 2.2em;
-  font-weight: 400;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-
 
 /* HEADER CONTENT -------------------------------------------------------------------------------------- */
 
@@ -190,7 +183,7 @@ a:hover.navOne {
 }
 
 .siteReviews {
-  height: 250px;
+  height: 200px;
   max-width: 460px;
   text-align: left;
   margin-top: 20px;
@@ -198,15 +191,14 @@ a:hover.navOne {
 }
 
 .oneFlexOne {
-  height: 260px;
+  height: 230px;
   margin-left: auto;
-  padding: 10px 0 20px 0;
+  padding: 20px 0 20px 0;
   background-color: red;
-
 }
 
 .twoFlexOne {
-  height: 260px;
+  height: 200px;
   margin-right: auto;
   padding: 10px 0 20px 0;
   background-color: aqua;
@@ -215,12 +207,13 @@ a:hover.navOne {
 .siteReviewsDiv1 {
   float: left;
   width: 114px;
-  height: 250px;
+  height: 200px;
+  background-color: #36769D;
 }
 
 .siteReviewsDiv2 {
   width: auto;
-  height: 250px;
+  height: 200px;
 }
 
 .quoteText {
@@ -267,6 +260,13 @@ img.siteReviewsImage {
   height: 506px;
   margin: 0 auto;
   background-color: #E3170A;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 h3 {
@@ -327,11 +327,10 @@ h3 {
   width: vw100;
   height: 90px;
   max-width: 635px;
-  padding: 30px 0 80px 0;
+  padding: 0 0 80px 0;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  background-color: #36769D;
 }
 
 .buttonChallengeOne2 {
@@ -502,6 +501,12 @@ footer {
   .twoFlexOne {
     display: none;
   }
+
+  h2 {
+  font-size: 2em;
+  font-weight: 400;
+  padding: 20px 0 0 0;
+}
 }
 
 @media only screen and (max-width: 640px) {
@@ -631,14 +636,6 @@ a.navOne {
   text-decoration: none;
   padding: 0 20px 0 20px;
 }
-
-.quoteText {
-  font-size: 1.37em;
-}
-
-.quoteTextWho {
-  font-size: 1.1em;
-}
 }
 
 @media only screen and (max-width: 810px) {
@@ -647,11 +644,7 @@ a.navOne {
   padding: 0 7px 0 7px;
 }
 
-.quoteText {
-  font-size: 1.17em;
-}
-
 .quoteTextWho {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 }
