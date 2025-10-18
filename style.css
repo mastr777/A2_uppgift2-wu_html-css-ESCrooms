@@ -320,35 +320,77 @@ img.siteReviewsImage {
 
 .flexTwo {
   display: flex;
-  max-width: vw100;
-  height: 600px;
-  flex-direction: row;
   flex-wrap: wrap;
+  max-width: 1280px;
+  height: 620px;
   padding-left: 40px;
   background-color: bisque;
 }
 
 .popularChallengesWrapper {
-  margin: 0 auto;
-  display: inline-block;
+  display:flex;
+  flex-direction: row;
+  column-gap: 4%;
   overflow: auto;
-  white-space: nowrap;
-}
-
-.threeFlexTwotest {
-  display: inline-block;
-  width: 363px;
-  height: 446px;
-  background-color: aqua;
+  white-space: wrap;
+  width: 1200px;
+  height: 506px;
+  margin: 0 auto;
+  background-color: #E3170A;
 }
 
 .threeFlexTwo {
-  display: inline-block;
-  width: 400;
+  width: 363px;
+  height: 446px;
+  background-color: white;
+  margin-top: 14px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.popularChallengeImage {
+  width: 362px;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  margin: 6px 0 0 0;
+  margin: 0 0 0 16px;
+}
+
+.popuChallengesInfoDiv {
+  width: 363px;
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
+}
+
+.popuChallengesInfo {
+  font-size: 1.07em;
+  font-weight: 400;
+  padding-top: 0;
+  padding-left: 16px;
+}
+
+.popuChallengesButton {
+  width: 178px;
+  height: 44px;
+  font-size: .9em;
+  font-weight: bold;
+  color: white;
+  background-color: var(--redColor);
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
 }
 
 img.justAtripleImage {
-  width: 362;
+  width: 362px;
   height: auto;
 }
 
