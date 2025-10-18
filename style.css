@@ -24,6 +24,8 @@ body {
     'Segoe UI', Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif; */
   color: var(--blackColor);
+  line-height: 1.2;
+  letter-spacing: 0.1px;
 }
 
 .container {
@@ -177,78 +179,6 @@ a:hover.navOne {
 
 /* END (FIRST TWO buttons) ------------------------------------------------------------------------------ */
 
-/* SECOND TWO buttons ----------------------------------------------------------------------------------- */
-
-.twoButtons2 {
-  width: vw100;
-  height: 90px;
-  max-width: 635px;
-  padding: 30px 0 80px 0;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  background-color: #36769D;
-}
-
-.buttonChallengeOne2 {
-  display: inline-block;
-  width: 308px;
-  height: 66px;
-  font-size: 1.3em;
-  font-weight: 600;
-  margin: 0 auto;
-  background-color: var(--lightblueColor);
-  border: 0;
-  border-radius: 5px;
-}
-
-.buttonChallengeTwo2 {
-  display: none;
-  width: 308px;
-  height: 66px;
-  font-size: 1.3em;
-  font-weight: 600;
-  color: white;
-  margin: 0 auto;
-  background-color: var(--redColor);
-  border: 0;
-  border-radius: 5px;
-}
-
-/* END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
-
-
-.twoSec {
-  width: vw100;
-  height: 500px;
-  background-color: var(--blackColor);
-}
-
-.textBoxTwoSec {
-  width: 620px;
-  height: 380px;
-  margin: 0 auto;
-  font-size: 1.72em;
-  text-align: center;
-  text-overflow: clip;
-  color: white;
-  padding-top: 90px;
-}
-
-.readMoreButton {
-  display: inline-block;
-  width: 308px;
-  height: 66px;
-  font-size: .8em;
-  font-weight: 600;
-  margin: 0 auto;
-  color: var(--lightblueColor);
-  background-color: var(--blackColor);
-  border: 2px solid var(--lightblueColor);
-  border-radius: 5px;
-}
-
-
 /* FLEX ONE/2 CONTENT ----------------------------------------------------------------------------------- */
 
 .flexOne {
@@ -339,6 +269,13 @@ img.siteReviewsImage {
   background-color: #E3170A;
 }
 
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+  padding: 7px 0 0 0;
+  margin: 0 0 0 14px;
+}
+
 .threeFlexTwo {
   width: 363px;
   height: 446px;
@@ -353,13 +290,6 @@ img.siteReviewsImage {
   height: auto;
 }
 
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  margin: 6px 0 0 0;
-  margin: 0 0 0 16px;
-}
-
 .popuChallengesInfoDiv {
   width: 363px;
   height: 140px;
@@ -369,29 +299,184 @@ h3 {
 }
 
 .popuChallengesInfo {
-  font-size: 1.07em;
+  font-size: 1.1em;
   font-weight: 400;
   padding-top: 0;
-  padding-left: 16px;
+  padding-left: 14px;
 }
 
 .popuChallengesButton {
   width: 178px;
   height: 44px;
-  font-size: .9em;
+  font-size: .95em;
   font-weight: bold;
   color: white;
   background-color: var(--redColor);
   border: 0;
   border-radius: 4px;
   position: absolute;
-  right: 17px;
-  bottom: 17px;
+  right: 10px;
+  bottom: 10px;
 }
 
-img.justAtripleImage {
-  width: 362px;
-  height: auto;
+/* END (FLEX TWO/3 CONTENT) ----------------------------------------------------------------------------- */
+
+/* SECOND TWO buttons ----------------------------------------------------------------------------------- */
+
+.twoButtons2 {
+  width: vw100;
+  height: 90px;
+  max-width: 635px;
+  padding: 30px 0 80px 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: #36769D;
+}
+
+.buttonChallengeOne2 {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0 auto;
+  background-color: var(--lightblueColor);
+  border: 0;
+  border-radius: 5px;
+}
+
+.buttonChallengeTwo2 {
+  display: none;
+  width: 308px;
+  height: 66px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  background-color: var(--redColor);
+  border: 0;
+  border-radius: 5px;
+}
+
+/* END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
+
+.twoSec {
+  width: vw100;
+  height: 500px;
+  background-color: var(--blackColor);
+}
+
+.textBoxTwoSec {
+  width: 620px;
+  height: 380px;
+  margin: 0 auto;
+  font-size: 1.72em;
+  text-align: center;
+  text-overflow: clip;
+  color: white;
+  padding-top: 90px;
+}
+
+.readStoryButton {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  font-size: .8em;
+  font-weight: 600;
+  margin: 0 auto;
+  color: var(--lightblueColor);
+  background-color: var(--blackColor);
+  border: 2px solid var(--lightblueColor);
+  border-radius: 5px;
+}
+
+/* SQUARE GRID wrapper ----------------------------------------------------------------------------------- */
+
+.squareGrid {
+  display: grid;
+  max-width: 1280px;
+  height: 920px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+h2.squareGridHtwo {
+  font-size: 2em;
+  font-weight: 600;
+  padding: 20px 0 0 20px;
+}
+
+p.pSquaregrid {
+  font-size: 1.5em;
+  padding: 20px 0 0 20px;
+}
+
+.boxSquareGrid1 {
+  background-image: url('esc_imgs/nesa-by-makers-640x460.png');
+}
+
+.boxSquareGrid2 {
+  color: var(--blackColor);
+  width: 640px;
+  position: relative;
+}
+
+.boxSquareGrid3 {
+  color: var(--blackColor);
+  width: 640px;
+  position: relative;
+}
+
+.boxSquareGrid4 {
+  background-image: url('esc_imgs/kelly-sikkema-img-640x460.png');
+}
+
+.textDivSquareGrid {
+  width: 440px;
+  height: 380px;
+  position: absolute;
+  top: 38px;
+  left: 95px;
+}
+
+.buttonBookSquareGrid {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  background-color: var(--redColor);
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.buttonChallengesSquareGrid {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  background-color: var(--redColor);
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+/* END (SQUARE GRID wrapper) ------------------------------------------------------------------------------ */
+
+footer {
+  width: 1280px;
+  height: 467px;
+  background-color: var(--blackColor);
 }
 
 .secondNav {
@@ -401,7 +486,6 @@ img.justAtripleImage {
 .secondNavSpan {
   display: block;
 }
-
 
 /* @media queries ----------------------------------------------------------------------------------------- */
 
@@ -547,11 +631,27 @@ a.navOne {
   text-decoration: none;
   padding: 0 20px 0 20px;
 }
+
+.quoteText {
+  font-size: 1.37em;
+}
+
+.quoteTextWho {
+  font-size: 1.1em;
+}
 }
 
 @media only screen and (max-width: 810px) {
 a.navOne {
   font-size: 1.3em;
   padding: 0 7px 0 7px;
+}
+
+.quoteText {
+  font-size: 1.17em;
+}
+
+.quoteTextWho {
+  font-size: 1em;
 }
 }
