@@ -95,22 +95,28 @@ h1 span {
   display: block;
 }
 
-/* END (HEADER CONTENT) ------------------------------------------------------------------------------- */
-
 /* FIRST Navigation area ------------------------------------------------------------------------------ */
-
-.oneSec {
-  width: vw100;
-  height: 274px;
-  background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-}
 
 .firstNav {
   display: none;
+  max-width: 1280px;
+  width: 100%;
+  height: 64px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+a.navOne {
+  font-size: 1.45em;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 0 37px 0 37px;
+}
+
+a:hover.navOne {
+  color: var(--lightblueColor);
 }
 
 .firstNavSpan {
@@ -119,6 +125,16 @@ h1 span {
 }
 
 /* END (FIRST Navigation area) ------------------------------------------------------------------------- */
+/* END (HEADER CONTENT) ------------------------------------------------------------------------------- */
+
+.oneSec {
+  width: vw100;
+  height: 274px;
+  background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /* FIRST TWO buttons ----------------------------------------------------------------------------------- */
 
@@ -208,6 +224,30 @@ h1 span {
   background-color: var(--blackColor);
 }
 
+.textBoxTwoSec {
+  width: 620px;
+  height: 380px;
+  margin: 0 auto;
+  font-size: 1.72em;
+  text-align: center;
+  text-overflow: clip;
+  color: white;
+  padding-top: 90px;
+}
+
+.readMoreButton {
+  display: inline-block;
+  width: 308px;
+  height: 66px;
+  font-size: .8em;
+  font-weight: 600;
+  margin: 0 auto;
+  color: var(--lightblueColor);
+  background-color: var(--blackColor);
+  border: 2px solid var(--lightblueColor);
+  border-radius: 5px;
+}
+
 
 /* FLEX ONE/2 CONTENT ----------------------------------------------------------------------------------- */
 
@@ -295,9 +335,16 @@ img.siteReviewsImage {
   white-space: nowrap;
 }
 
+.threeFlexTwotest {
+  display: inline-block;
+  width: 363px;
+  height: 446px;
+  background-color: aqua;
+}
+
 .threeFlexTwo {
   display: inline-block;
-  width: 400px;
+  width: 400;
 }
 
 img.justAtripleImage {
@@ -328,6 +375,12 @@ img.justAtripleImage {
 
   .twoFlexOne {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+.textBoxTwoSec {
+  max-width: 480px;
   }
 }
 
@@ -442,4 +495,21 @@ h1 span {
   .siteReviewsTimeBlock {
     display: block;
   }
+}
+
+@media only screen and (max-width: 960px) {
+a.navOne {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+}
+}
+
+@media only screen and (max-width: 810px) {
+a.navOne {
+  font-size: 1.3em;
+  padding: 0 7px 0 7px;
+}
 }
