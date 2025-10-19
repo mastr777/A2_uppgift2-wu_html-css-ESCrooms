@@ -23,7 +23,6 @@ body {
     -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif; */
-  color: var(--blackColor);
   line-height: 1.2;
   letter-spacing: 0.1px;
 }
@@ -41,6 +40,18 @@ body {
 p {
   padding: 28px;
   margin: 0;
+}
+
+a:link, .onlineChallengesLink {
+  color: var(--darkerBlueColor);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+a:visited, .onlineChallengesLink {
+  color: var(--darkerBlueColor);
+  font-size: 16px;
+  font-weight: 700;
 }
 
 
@@ -80,8 +91,8 @@ p {
 h1.styleHone {
   margin: 0;
   padding: 0;
-  font-size: 1.48em;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
   line-height: 1.2;
   color: white;
 }
@@ -103,8 +114,8 @@ h1 span {
 }
 
 a.navOne {
-  font-size: 1.45em;
-  font-weight: 500;
+  font-size: 24px;
+  font-weight: 700;
   color: white;
   text-decoration: none;
   padding: 0 37px 0 37px;
@@ -140,7 +151,7 @@ a:hover.navOne {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  background-color: #36769D;
+
 }
 
 .buttonChallengeOne {
@@ -148,8 +159,8 @@ a:hover.navOne {
   width: 308px;
   height: 66px;
   margin: 0 auto;
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   background-color: var(--lightblueColor);
   border: 0;
   border-radius: 5px;
@@ -162,8 +173,8 @@ a:hover.navOne {
   width: 308px;
   height: 66px;
   margin: 0 auto;
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   color: white;
   background-color: var(--redColor);
   border: 0;
@@ -187,28 +198,24 @@ a:hover.navOne {
   max-width: 460px;
   text-align: left;
   margin-top: 20px;
-  background-color: aquamarine;
 }
 
 .oneFlexOne {
   height: 230px;
   margin-left: auto;
   padding: 20px 0 20px 0;
-  background-color: red;
 }
 
 .twoFlexOne {
   height: 200px;
   margin-right: auto;
   padding: 10px 0 20px 0;
-  background-color: aqua;
 }
 
 .siteReviewsDiv1 {
   float: left;
   width: 114px;
   height: 200px;
-  background-color: #36769D;
 }
 
 .siteReviewsDiv2 {
@@ -217,19 +224,21 @@ a:hover.navOne {
 }
 
 .quoteText {
-  font-size: 1.47em;
+  font-size: 24px;
+  font-weight: 400;
   font-style: italic;
   padding: 9px 24px 0 0;
   word-wrap: break-all;
 }
 
 .quoteTextWho {
-  font-size: 1.16em;
+  font-size: 18px;
+  font-weight: 400;
   padding: 5px 0 0 0;
 }
 
 img.siteReviewsImage {
-  width: 72px;
+  width: 73.34px;
   padding: 12px 0 0 20px;
 }
 
@@ -246,8 +255,7 @@ img.siteReviewsImage {
   flex-wrap: wrap;
   max-width: 1280px;
   height: 620px;
-  padding-left: 40px;
-  background-color: bisque;
+  margin: 0 auto;
 }
 
 .popularChallengesWrapper {
@@ -258,22 +266,48 @@ img.siteReviewsImage {
   white-space: wrap;
   width: 1200px;
   height: 506px;
-  margin: 0 auto;
-  background-color: #E3170A;
+  padding-left: 52px;
 }
 
 h2 {
-  font-size: 2.2em;
+  font-size: 36px;
   font-weight: 400;
   margin: 0 auto;
   padding-bottom: 40px;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 28px;
   font-weight: 400;
   padding: 7px 0 0 0;
   margin: 0 0 0 14px;
+}
+
+.popuChallengesStars {
+  display: block;
+  float: left;
+  width: 150px;
+  text-align: left;
+  padding: 0 0 0 17px;
+}
+
+.popuChallengesParticipants {
+  display: block;
+  float: right;
+  width: 150px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 0 0 0;
+  margin-right: 10px;
+}
+
+.starM {
+  padding-right: 5px;
+}
+
+.starUnM {
+  padding-right: 5px;
 }
 
 .threeFlexTwo {
@@ -282,6 +316,7 @@ h3 {
   background-color: white;
   margin-top: 14px;
   border-radius: 8px;
+  box-shadow: 0 0 5px 3px rgba(100, 100, 100, .1), 0 0 5px 3px rgba(100, 100, 100, .1);
   position: relative;
 }
 
@@ -299,17 +334,16 @@ h3 {
 }
 
 .popuChallengesInfo {
-  font-size: 1.1em;
+  font-size: 18px;
   font-weight: 400;
-  padding-top: 0;
-  padding-left: 14px;
+  padding: 0 6px 0 17px;
 }
 
 .popuChallengesButton {
-  width: 178px;
+  width: 179.28px;
   height: 44px;
-  font-size: .95em;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
   color: white;
   background-color: var(--redColor);
   border: 0;
@@ -337,8 +371,8 @@ h3 {
   display: inline-block;
   width: 308px;
   height: 66px;
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   margin: 0 auto;
   background-color: var(--lightblueColor);
   border: 0;
@@ -349,8 +383,8 @@ h3 {
   display: none;
   width: 308px;
   height: 66px;
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   color: white;
   margin: 0 auto;
   background-color: var(--redColor);
@@ -367,10 +401,11 @@ h3 {
 }
 
 .textBoxTwoSec {
-  width: 620px;
+  width: 630px;
   height: 380px;
   margin: 0 auto;
-  font-size: 1.72em;
+  font-size: 28px;
+  font-weight: 400;
   text-align: center;
   text-overflow: clip;
   color: white;
@@ -381,9 +416,9 @@ h3 {
   display: inline-block;
   width: 308px;
   height: 66px;
-  font-size: .8em;
-  font-weight: 600;
-  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
   color: var(--lightblueColor);
   background-color: var(--blackColor);
   border: 2px solid var(--lightblueColor);
@@ -402,13 +437,14 @@ h3 {
 }
 
 h2.squareGridHtwo {
-  font-size: 2em;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   padding: 20px 0 0 20px;
 }
 
 p.pSquaregrid {
-  font-size: 1.5em;
+  font-size: 24px;
+  font-weight: 400;
   padding: 20px 0 0 20px;
 }
 
@@ -459,8 +495,8 @@ p.pSquaregrid {
   display: inline-block;
   width: 308px;
   height: 66px;
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 700;
   color: white;
   background-color: var(--redColor);
   border: 0;
@@ -518,12 +554,11 @@ footer {
 }
 
 .aboutFlexThree {
-  width: 480px;
+  width: 416px;
   height: auto;
   padding-top: 50px;
   font-size: 1.16em;
   flex: 100%;
-  background-color: #E3170A;
 }
 
 .navBoxFlexThree {
@@ -532,7 +567,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 10px;
   flex: 100%;
-  background-color: aqua;
 }
 
 .navAbroadFlexThree {
@@ -541,17 +575,16 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
   flex: 100%;
-  background-color: aquamarine;
 }
 
 h3.headerFlexThree {
-  font-size: 1em;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   padding-left: 7px;
 }
 
 p.aboutTextFlexThree {
-  font-size: .96em;
+  font-size: 18px;
   font-weight: 400;
   padding: 9px 20px 25px 20px;
 }
@@ -627,8 +660,8 @@ a:hover.navThree {
   h1.styleHone {
   margin: 0;
   padding: 0;
-  font-size: 2.5em;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 700;
   line-height: 1.2;
   color: white;
 }
@@ -712,7 +745,7 @@ h1 span {
   }
 
   img.siteReviewsImage {
-    width: 94px;
+    width: 96px;
   }
 
   .siteReviewsTimeBlock {
@@ -730,9 +763,9 @@ footer {
 }
 
 .aboutFlexThree {
-  flex: 45%;
+  flex: 33%;
   height: auto;
-  padding: 130px 80px 0 100px;
+  padding: 130px 200px 0 100px;
 }
 
 .navBoxFlexThree {
