@@ -502,17 +502,19 @@ footer {
 /* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
 
 .footerWrapFlexThree {
-  display: flex;
-  flex-wrap: wrap;
   width: vw100;
   height: 566px;
   color: white;
 }
 
 .sectionWrapFlexThree {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   column-gap: 0;
   width: 480px;
   height: auto;
+  position: relative;
 }
 
 .aboutFlexThree {
@@ -520,6 +522,26 @@ footer {
   height: auto;
   padding-top: 50px;
   font-size: 1.16em;
+  flex: 100%;
+  background-color: #E3170A;
+}
+
+.navBoxFlexThree {
+  width: 480px;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  flex: 100%;
+  background-color: aqua;
+}
+
+.navAbroadFlexThree {
+  width: 480px;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  flex: 100%;
+  background-color: aquamarine;
 }
 
 h3.headerFlexThree {
@@ -532,16 +554,6 @@ p.aboutTextFlexThree {
   font-size: .96em;
   font-weight: 400;
   padding: 9px 20px 25px 20px;
-}
-
-.navBoxFlexThree {
-  width: 480px;
-  height: 200px;
-}
-
-.navAbroadFlexThree {
-  width: 480px;
-  height: 170px;
 }
 
 a.navTwo {
@@ -706,6 +718,34 @@ h1 span {
   .siteReviewsTimeBlock {
     display: block;
   }
+
+footer {
+  height: 467px;
+}
+
+.sectionWrapFlexThree {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.aboutFlexThree {
+  flex: 45%;
+  height: auto;
+  padding: 130px 80px 0 100px;
+}
+
+.navBoxFlexThree {
+  flex: 13%;
+  height: auto;
+  padding-top: 130px;
+}
+
+.navAbroadFlexThree  {
+  flex: 22%;
+  height: auto;
+  padding-top: 130px;
+}
 }
 
 @media only screen and (max-width: 960px) {
