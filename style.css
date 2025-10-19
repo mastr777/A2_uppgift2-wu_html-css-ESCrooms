@@ -172,7 +172,7 @@ a:hover.navOne {
 
 /* END (FIRST TWO buttons) ------------------------------------------------------------------------------ */
 
-/* FLEX ONE/2 CONTENT ----------------------------------------------------------------------------------- */
+/* FLEX ONE/2 content ----------------------------------------------------------------------------------- */
 
 .flexOne {
   display: flex;
@@ -237,9 +237,9 @@ img.siteReviewsImage {
   display: inline-block;
 }
 
-/* END (FLEXBOX ONE CONTENT) -------------------------------------------------------------------------- */
+/* END (FLEXBOX ONE content) ---------------------------------------------------------------------------- */
 
-/* FLEX TWO/3 CONTENT ----------------------------------------------------------------------------------- */
+/* FLEX TWO/3 content ----------------------------------------------------------------------------------- */
 
 .flexTwo {
   display: flex;
@@ -319,7 +319,7 @@ h3 {
   bottom: 10px;
 }
 
-/* END (FLEX TWO/3 CONTENT) ----------------------------------------------------------------------------- */
+/* END (FLEX TWO/3 content) ----------------------------------------------------------------------------- */
 
 /* SECOND TWO buttons ----------------------------------------------------------------------------------- */
 
@@ -474,17 +474,97 @@ p.pSquaregrid {
 
 footer {
   width: 1280px;
-  height: 467px;
+  height: 566px;
   background-color: var(--blackColor);
 }
 
 .secondNav {
   text-align: left;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+
+.abroadNav {
+  text-align: left;
+  padding-top: 7px;
+  padding-left: 20px;
 }
 
 .secondNavSpan {
   display: block;
 }
+
+.secondNavBreakrow::before {
+  content: '\a';
+  white-space: pre;
+}
+
+/* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
+
+.footerWrapFlexThree {
+  display: flex;
+  flex-wrap: wrap;
+  width: vw100;
+  height: 566px;
+  color: white;
+}
+
+.sectionWrapFlexThree {
+  column-gap: 0;
+  width: 480px;
+  height: auto;
+}
+
+.aboutFlexThree {
+  width: 480px;
+  height: auto;
+  padding-top: 50px;
+  font-size: 1.16em;
+}
+
+h3.headerFlexThree {
+  font-size: 1em;
+  font-weight: 600;
+  padding-left: 7px;
+}
+
+p.aboutTextFlexThree {
+  font-size: .96em;
+  font-weight: 400;
+  padding: 9px 20px 25px 20px;
+}
+
+.navBoxFlexThree {
+  width: 480px;
+  height: 200px;
+}
+
+.navAbroadFlexThree {
+  width: 480px;
+  height: 170px;
+}
+
+a.navTwo {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover.navTwo {
+  color: var(--lightblueColor);
+}
+
+a.navThree {
+  font-size: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover.navThree {
+  color: var(--lightblueColor);
+}
+
+/* END (FLEX THREE/3 content) ----------------------------------------------------------------------------- */
 
 /* @media queries ----------------------------------------------------------------------------------------- */
 
