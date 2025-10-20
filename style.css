@@ -651,19 +651,12 @@ a:hover.navThree {
 
   .inlineBlock2 {
   width: 500px;
-  padding: 24px 0 0 0;
-  position: absolute;
   left: 178px;
   top: 33px;
 }
 
   h1.styleHone {
-  margin: 0;
-  padding: 0;
   font-size: 40px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: white;
 }
 
 h1 span {
