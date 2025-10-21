@@ -32,7 +32,7 @@ body {
   grid-template-rows: none;
   margin: 0 auto;
   max-width: 1280px;
-  width: vw100;
+  width: 100%;
   background-color: white;
 }
 
@@ -56,6 +56,10 @@ a:visited, .onlineChallengesLink {
 button {
   border: 0;
   border-radius: 4px;
+  width: 278px;
+  height: 56px;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* HEADER CONTENT -------------------------------------------------------------------------------------- */
@@ -154,16 +158,11 @@ a:hover.navOne {
   margin: 0 auto;
   text-align: center;
   position: relative;
-
 }
 
 .buttonChallengeOne {
   display: inline-block;
-  width: 308px;
-  height: 66px;
   margin: 0 auto;
-  font-size: 24px;
-  font-weight: 700;
   background-color: var(--lightblueColor);
   position: static;
   top: -20px;
@@ -171,11 +170,7 @@ a:hover.navOne {
 
 .buttonChallengeTwo {
   display: none;
-  width: 308px;
-  height: 66px;
   margin: 0 auto;
-  font-size: 24px;
-  font-weight: 700;
   color: white;
   background-color: var(--redColor);
 }
@@ -366,20 +361,12 @@ h3 {
 
 .buttonChallengeOne2 {
   display: inline-block;
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 700;
   margin: 0 auto;
   background-color: var(--lightblueColor);
 }
 
 .buttonChallengeTwo2 {
   display: none;
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 700;
   color: white;
   margin: 0 auto;
   background-color: var(--redColor);
@@ -407,10 +394,6 @@ h3 {
 
 .readStoryButton {
   display: inline-block;
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 700;
   margin-top: 10px;
   color: var(--lightblueColor);
   background-color: var(--blackColor);
@@ -423,22 +406,21 @@ h3 {
 .squareGrid {
   display: grid;
   grid-template-columns: 480px;
-  grid-template-rows: 300px 450px 300px 450px;
+  grid-template-rows: 300px 370px 300px 390px;
   gap: 0;
   max-width: 480px;
-  height: auto;
   margin: 0 auto;
-  padding-bottom: 140px;
+  padding-bottom: 0;
 }
 
 h2.squareGridHtwo {
-  font-size: 32px;
+  font-size: 27px;
   font-weight: 700;
-  padding: 20px 0 0 20px;
+  padding: 0 0 0 20px;
 }
 
 p.pSquaregrid {
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 400;
   padding: 20px 0 0 20px;
 }
@@ -446,6 +428,7 @@ p.pSquaregrid {
 .boxSquareGrid1 {
   display: inline-block;
   background-image: url('esc_imgs/nesa-by-makers-480x300.png');
+  background-size: contain;
   width: 480px;
   height: 300px;
 }
@@ -462,8 +445,7 @@ p.pSquaregrid {
   grid-column: 1;
   grid-row: 4 / 4;
   color: var(--blackColor);
-  width: 480px;
-  margin-bottom: 50px;
+  width: 360px;
   position: relative;
 }
 
@@ -478,41 +460,34 @@ p.pSquaregrid {
 
 .textDivSquareGrid {
   width: 440px;
-  height: 380px;
+  height: 300px;
   position: relative;
   top: 38px;
 }
 
 .buttonBookSquareGrid {
   display: inline-block;
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 700;
   color: white;
   background-color: var(--redColor);
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .buttonChallengesSquareGrid {
   display: inline-block;
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 700;
   color: white;
   background-color: var(--redColor);
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 /* END (SQUARE GRID wrapper) ------------------------------------------------------------------------------ */
 
 footer {
-  width: 1280px;
+  max-width: 1280px;
+  width: vw100;
   height: 566px;
   background-color: var(--blackColor);
 }
@@ -648,13 +623,48 @@ a:hover.navThree {
 }
 
 @media only screen and (min-width: 700px) {
-  .header {
-    height: 216px;
-  }
 
-  .firstNav {
+.header {
+    height: 216px;
+}
+
+.firstNav {
     display: inline-block;
-  }
+}
+
+button {
+  width: 308px;
+  height: 66px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.textDivSquareGrid {
+  position: relative;
+  height: 370px;
+}
+
+.buttonBookSquareGrid {
+  position: absolute;
+  bottom: 0;
+}
+
+.buttonChallengesSquareGrid {
+  position: absolute;
+  bottom: 0;
+}
+
+h2.squareGridHtwo {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px 0 0 20px;
+}
+
+p.pSquaregrid {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 0 0 20px;
+}
 
 .squareGrid {
   display: grid;
@@ -663,7 +673,7 @@ a:hover.navThree {
   gap: 0;
   max-width: 1280px;
   height: 920px;
-  margin: 0 auto;
+  margin-bottom: 160px;
 }
 
 .boxSquareGrid1 {
