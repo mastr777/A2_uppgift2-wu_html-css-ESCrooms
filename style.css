@@ -258,7 +258,7 @@ img.siteReviewsImage {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 400;
   margin: 0 auto;
   padding-bottom: 40px;
@@ -562,7 +562,7 @@ p.aboutTextFlexThree {
 }
 
 a.navTwo {
-  font-size: 1em;
+  font-size: 16px;
   color: white;
   text-decoration: none;
 }
@@ -572,7 +572,7 @@ a:hover.navTwo {
 }
 
 a.navThree {
-  font-size: 1em;
+  font-size: 16px;
   color: white;
   text-decoration: none;
 }
@@ -584,6 +584,12 @@ a:hover.navThree {
 /* END (FLEX THREE/3 content) ----------------------------------------------------------------------------- */
 
 /* @media queries ----------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 400px) {
+h2 {
+  font-size: 22px;
+}
+}
 
 @media only screen and (min-width: 560px) {
   .oneSec {
@@ -830,5 +836,12 @@ footer {
   flex: 22%;
   height: auto;
   padding-top: 130px;
+}
+}
+
+@media only screen and (max-width: 960px) {
+a.navOne {
+  font-size: 22px;
+  padding: 0 30px 0 30px;
 }
 }
