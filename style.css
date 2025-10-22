@@ -66,7 +66,7 @@ button {
 }
 
 .insideHeaderDiv {
-  width: vw100;
+  width: 100%;
   height: 110px;
 }
 
@@ -131,10 +131,10 @@ a:hover.navOne {
 }
 
 /* END (FIRST Navigation area) ------------------------------------------------------------------------- */
-/* END (HEADER CONTENT) ------------------------------------------------------------------------------- */
+/* END (HEADER CONTENT) -------------------------------------------------------------------------------- */
 
 .oneSec {
-  width: vw100;
+  width: 100%;
   height: 274px;
   background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
   background-position: center;
@@ -145,7 +145,7 @@ a:hover.navOne {
 /* FIRST TWO buttons ----------------------------------------------------------------------------------- */
 
 .twoButtons {
-  width: vw100;
+  width: 100%100;
   max-width: 635px;
   padding-top: 40px;
   margin: 0 auto;
@@ -174,7 +174,7 @@ a:hover.navOne {
 
 .flexOne {
   display: flex;
-  width: vw100;
+  width: 100%;
   flex-direction: column;
   flex-wrap: nowrap;
   position: relative;
@@ -344,7 +344,7 @@ h3 {
 /* SECOND TWO buttons ----------------------------------------------------------------------------------- */
 
 .twoButtons2 {
-  width: vw100;
+  width: 100%100;
   height: 90px;
   max-width: 635px;
   padding: 0 0 80px 0;
@@ -369,21 +369,22 @@ h3 {
 /* END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
 
 .twoSec {
-  width: vw100;
+  width: 100%;
   height: 500px;
   background-color: var(--blackColor);
 }
 
 .textBoxTwoSec {
-  width: 480px;
+  width: 100%;
   height: 380px;
   margin: 0 auto;
   font-size: 28px;
   font-weight: 400;
   text-align: center;
-  text-overflow: clip;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   color: white;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 .readStoryButton {
@@ -433,6 +434,8 @@ p.pSquaregrid {
   display: inline-block;
   color: var(--blackColor);
   width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   position: relative;
 }
 
@@ -442,6 +445,8 @@ p.pSquaregrid {
   grid-row: 4 / 4;
   color: var(--blackColor);
   width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   position: relative;
 }
 
@@ -456,7 +461,7 @@ p.pSquaregrid {
 }
 
 .textDivSquareGrid {
-  width: 440px;
+  width: 89%;
   height: 300px;
   position: relative;
   top: 38px;
@@ -484,7 +489,7 @@ p.pSquaregrid {
 
 footer {
   max-width: 1280px;
-  width: vw100;
+  width: 100%;
   height: 566px;
   background-color: var(--blackColor);
 }
@@ -513,7 +518,7 @@ footer {
 /* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
 
 .footerWrapFlexThree {
-  width: vw100;
+  width: 100%;
   height: 566px;
   color: white;
 }
@@ -529,7 +534,7 @@ footer {
 }
 
 .aboutFlexThree {
-  width: 416px;
+  width: 480px;
   height: auto;
   padding-top: 50px;
   font-size: 1.16em;
@@ -593,6 +598,13 @@ h2 {
   font-size: 24px;
 }
 
+.textBoxTwoSec {
+  width: 100%;
+  height: 390px;
+  font-size: 20px;
+  padding-top: 60px;
+}
+
 .squareGrid {
   display: grid;
   grid-template-columns: 100%;
@@ -633,6 +645,13 @@ h2 {
   font-weight: 400;
   padding: 5px 0 0 0;
 }
+
+.textBoxTwoSec {
+  width: 600px;
+  height: 390px;
+  font-size: 24px;
+  padding-top: 100px;
+}
 }
 
 @media only screen and (min-width: 760px) {
@@ -665,30 +684,21 @@ button {
 }
 
 .textDivSquareGrid {
-  position: relative;
+  width: 67%;
+  margin: 0 auto;
   height: 370px;
+  position: relative;
+  padding-top: 38px;
 }
 
 .buttonBookSquareGrid {
   position: absolute;
-  bottom: 0;
+  bottom: 80px;
 }
 
 .buttonChallengesSquareGrid {
   position: absolute;
-  bottom: 0;
-}
-
-h2.squareGridHtwo {
-  font-size: 32px;
-  font-weight: 700;
-  padding: 20px 0 0 20px;
-}
-
-p.pSquaregrid {
-  font-size: 24px;
-  font-weight: 400;
-  padding: 20px 0 0 20px;
+  bottom: 80px;
 }
 
 .squareGrid {
@@ -750,7 +760,7 @@ h1 span {
 }
 
   .oneSec {
-    width: vw100;
+    width: 100%;
     height: 468px;
     background-image: url('esc_imgs/ESC_section-img_BIG.png');
     background-position: center;
@@ -864,5 +874,28 @@ footer {
 a.navOne {
   font-size: 22px;
   padding: 0 30px 0 30px;
+}
+}
+
+@media only screen and (max-width: 980px) {
+
+h2.squareGridHtwo {
+  font-size: 26px;
+}
+
+p.pSquaregrid {
+  font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 1166px) {
+.buttonBookSquareGrid {
+  position: absolute;
+  bottom: 40px;
+}
+
+.buttonChallengesSquareGrid {
+  position: absolute;
+  bottom: 40px;
 }
 }
