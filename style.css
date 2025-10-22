@@ -212,7 +212,7 @@ a:hover.navOne {
 }
 
 .quoteText {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   font-style: italic;
   padding: 9px 24px 0 0;
@@ -220,7 +220,7 @@ a:hover.navOne {
 }
 
 .quoteTextWho {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   padding: 5px 0 0 0;
 }
@@ -595,6 +595,20 @@ a:hover.navThree {
   .oneSec {
     height: 400px;
   }
+
+.quoteText {
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 9px 24px 0 0;
+  word-wrap: break-all;
+}
+
+.quoteTextWho {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px 0 0 0;
+}
 }
 
 @media only screen and (min-width: 760px) {
