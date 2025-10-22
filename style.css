@@ -584,8 +584,12 @@ a:hover.navThree {
 
 /* @media queries ----------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 430px) {
-
+@media only screen and (max-width: 460px) {
+  h2 {
+  font-size: 26px;
+  font-weight: 400;
+  padding: 0 0 0 0;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -603,7 +607,7 @@ a:hover.navThree {
   }
 
   h2 {
-  font-size: 2em;
+  font-size: 30px;
   font-weight: 400;
   padding: 20px 0 0 0;
 }
@@ -827,7 +831,7 @@ footer {
 
 @media only screen and (max-width: 960px) {
 a.navOne {
-  font-size: 1.4em;
+  font-size: 30px;
   font-weight: 500;
   color: white;
   text-decoration: none;
@@ -837,11 +841,11 @@ a.navOne {
 
 @media only screen and (max-width: 810px) {
 a.navOne {
-  font-size: 1.3em;
+  font-size: 26px;
   padding: 0 7px 0 7px;
 }
 
 .quoteTextWho {
-  font-size: 1.1em;
+  font-size: 20px;
 }
 }
