@@ -613,6 +613,14 @@ h2 {
   width: 100%;
 }
 
+.textDivSquareGrid {
+  height: 330px;
+}
+
+.aboutFlexThree {
+  width: 100%;
+  max-width: 390px;
+}
 }
 
 @media only screen and (max-width: 480px) {
