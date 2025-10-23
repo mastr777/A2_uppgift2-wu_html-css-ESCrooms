@@ -50,7 +50,7 @@ button {
   width: 278px;
   height: 56px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* HEADER CONTENT -------------------------------------------------------------------------------------- */
@@ -116,7 +116,7 @@ figure {
 
 a.navOne {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   color: white;
   text-decoration: none;
   padding: 0 37px 0 37px;
@@ -128,7 +128,7 @@ a:hover.navOne {
 
 .firstNavSpan {
   display: inline-block;
-  padding: 10px 20px 0 20px;
+  padding: 14px 20px 0 20px;
 }
 
 /* END (FIRST Navigation area) ------------------------------------------------------------------------- */
@@ -144,7 +144,7 @@ a:hover.navOne {
 
 /* FIRST TWO buttons ----------------------------------------------------------------------------------- */
 .twoButtons {
-  width: 100% 100;
+  width: 100%;
   max-width: 635px;
   padding-top: 40px;
   margin: 0 auto;
@@ -224,7 +224,7 @@ a:hover.navOne {
 }
 
 img.siteReviewsImage {
-  width: 73.34px;
+  width: 73px;
   padding: 12px 0 0 20px;
 }
 
