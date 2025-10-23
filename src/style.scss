@@ -1,4 +1,6 @@
 
+@use 'sections/header.scss';
+
 /* CSS for ESC - Hacker Escape Rooms, site */
 
 html {
@@ -53,57 +55,6 @@ button {
   height: 56px;
   font-size: 18px;
   font-weight: 600;
-}
-
-/* HEADER CONTENT -------------------------------------------------------------------------------------- */
-
-.header {
-  width: 100%;
-  height: 144px;
-  background-color: var(--blackColor);
-  text-align: left;
-  position: relative;
-}
-
-.insideHeaderDiv {
-  width: 100%;
-  height: 110px;
-}
-
-.inlineBlock1 {
-  display: inline-block;
-  width: 120px;
-  padding: 26px 0 0 26px;
-  position: absolute;
-  top: 0px;
-  left: 0;
-}
-
-.inlineBlock2 {
-  display: inline-block;
-  width: 200px;
-  padding: 24px 0 0 0;
-  position: absolute;
-  top: 0px;
-  left: 167px;
-}
-
-h1.styleHone {
-  margin: 0;
-  padding: 0;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: white;
-}
-
-h1 span {
-  display: block;
-}
-
-figure {
-  margin: 0;
-  padding: 0;
 }
 
 /* FIRST Navigation area ------------------------------------------------------------------------------ */
