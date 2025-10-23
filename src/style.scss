@@ -101,6 +101,11 @@ h1 span {
   display: block;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 /* FIRST Navigation area ------------------------------------------------------------------------------ */
 
 .firstNav {
@@ -307,10 +312,10 @@ h3 {
   border-radius: 8px;
   box-shadow: 0 0 5px 3px rgba(100, 100, 100, .1), 0 0 5px 3px rgba(100, 100, 100, .1);
   position: relative;
-}
 
-section:hover.threeFlexTwo {
-  box-shadow: 0 0 10px 3px rgba(100, 100, 100, .2), 0 0 7px 3px rgba(100, 100, 100, .2);
+  :hover.threeFlexTwo {
+    box-shadow: 0 0 10px 3px rgba(100, 100, 100, .2), 0 0 7px 3px rgba(100, 100, 100, .2);
+}
 }
 
 .popularChallengeImage {
@@ -431,6 +436,7 @@ p.pSquaregrid {
   background-image: url('esc_imgs/nesa-by-makers-480x300.png');
   background-size: contain;
   width: 100%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
 }
@@ -461,6 +467,7 @@ p.pSquaregrid {
   grid-row: 3 / 4;
   background-image: url('esc_imgs/kelly-sikkema-480x300.png');
   width: 100%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
 }
@@ -497,7 +504,6 @@ footer {
   width: 100%;
   height: 566px;
   background-color: var(--blackColor);
-}
 
 .secondNav {
   text-align: left;
@@ -518,6 +524,7 @@ footer {
 .secondNavBreakrow::before {
   content: '\a';
   white-space: pre;
+}
 }
 
 /* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
@@ -738,6 +745,7 @@ button {
   grid-row: 1 / 1;
   background-image: url('esc_imgs/nesa-by-makers-640x460.png');
   width: 100%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
 }
@@ -762,6 +770,7 @@ button {
   grid-row: 2 / 2;
   background-image: url('esc_imgs/kelly-sikkema-img-640x460.png');
   width: 100%;
+  margin: 0 auto;
   background-size: cover;
   background-position: center;
 }
