@@ -291,11 +291,11 @@ h3 {
   margin-right: 10px;
 }
 
-.starM {
+.starChecked {
   padding-right: 5px;
 }
 
-.starUnM {
+.starUnChecked {
   padding-right: 5px;
 }
 
@@ -307,6 +307,10 @@ h3 {
   border-radius: 8px;
   box-shadow: 0 0 5px 3px rgba(100, 100, 100, .1), 0 0 5px 3px rgba(100, 100, 100, .1);
   position: relative;
+}
+
+article:hover.threeFlexTwo {
+  box-shadow: 0 0 10px 3px rgba(100, 100, 100, .2), 0 0 7px 3px rgba(100, 100, 100, .2);
 }
 
 .popularChallengeImage {
