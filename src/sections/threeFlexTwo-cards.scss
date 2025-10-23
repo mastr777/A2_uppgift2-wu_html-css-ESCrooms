@@ -20,7 +20,7 @@
 }
 
 .threeFlexTwo {
-  width: 363px;
+  width: 300px;
   height: 446px;
   background-color: white;
   margin-top: 14px;
@@ -31,6 +31,38 @@
 
 :hover.threeFlexTwo {
     box-shadow: 0 0 10px 3px rgba(100, 100, 100, .2), 0 0 7px 3px rgba(100, 100, 100, .2);
+}
+
+.popuChallengesImage {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.popuChallengesInfoDiv {
+  width: 300px;
+  height: 140px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
+}
+
+.popuChallengesInfo {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 6px 0 17px;
+}
+
+.popuChallengesButton {
+  width: 180px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--redColor);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 .popuChallengesStars {
@@ -58,35 +90,4 @@
 
 .starUnChecked {
   padding-right: 5px;
-}
-
-.popularChallengeImage {
-  width: 362px;
-  height: auto;
-}
-
-.popuChallengesInfoDiv {
-  width: 363px;
-  height: 140px;
-  position: absolute;
-  bottom: 0;
-  border-radius: 8px;
-}
-
-.popuChallengesInfo {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 0 6px 0 17px;
-}
-
-.popuChallengesButton {
-  width: 180px;
-  height: 44px;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  background-color: var(--redColor);
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
 }
