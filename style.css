@@ -1,3 +1,74 @@
+/* CSS for ESC - Hacker Escape Rooms, site */
+html {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --darkerBlueColor: #36769D;
+  --lightblueColor: #8ACFE5;
+  --redColor: #E3170A;
+  --blackColor: #011827;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.2;
+  letter-spacing: 0.1px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  background-color: white;
+}
+
+p {
+  padding: 28px;
+  margin: 0;
+}
+
+a:link,
+.onlineChallengesLink {
+  color: var(--darkerBlueColor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+a:visited,
+.onlineChallengesLink {
+  color: var(--darkerBlueColor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button {
+  border: 0;
+  border-radius: 4px;
+  width: 278px;
+  height: 56px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 7px 0 0 0;
+  margin: 0 0 0 14px;
+}
+
 /* HEADER content */
 .header {
   width: 100%;
@@ -139,77 +210,6 @@ figure {
 
 .starUnChecked {
   padding-right: 5px;
-}
-
-/* CSS for ESC - Hacker Escape Rooms, site */
-html {
-  padding: 0;
-  margin: 0;
-}
-
-:root {
-  --darkerBlueColor: #36769D;
-  --lightblueColor: #8ACFE5;
-  --redColor: #E3170A;
-  --blackColor: #011827;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  background-color: lightgrey;
-  font-family: "Roboto", sans-serif;
-  line-height: 1.2;
-  letter-spacing: 0.1px;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 100%;
-  background-color: white;
-}
-
-p {
-  padding: 28px;
-  margin: 0;
-}
-
-a:link,
-.onlineChallengesLink {
-  color: var(--darkerBlueColor);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-a:visited,
-.onlineChallengesLink {
-  color: var(--darkerBlueColor);
-  font-size: 16px;
-  font-weight: 600;
-}
-
-button {
-  border: 0;
-  border-radius: 4px;
-  width: 278px;
-  height: 56px;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 400;
-  padding: 7px 0 0 0;
-  margin: 0 0 0 14px;
 }
 
 /* FIRST Navigation area ------------------------------------------------------------------------------ */
