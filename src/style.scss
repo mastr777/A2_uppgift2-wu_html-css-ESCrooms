@@ -1,5 +1,5 @@
-
 @use 'sections/header.scss';
+@use 'sections/threeFlexTwo-cards.scss';
 
 /* CSS for ESC - Hacker Escape Rooms, site */
 
@@ -36,13 +36,15 @@ p {
   margin: 0;
 }
 
-a:link, .onlineChallengesLink {
+a:link,
+.onlineChallengesLink {
   color: var(--darkerBlueColor);
   font-size: 16px;
   font-weight: 600;
 }
 
-a:visited, .onlineChallengesLink {
+a:visited,
+.onlineChallengesLink {
   color: var(--darkerBlueColor);
   font-size: 16px;
   font-weight: 600;
@@ -55,6 +57,20 @@ button {
   height: 56px;
   font-size: 18px;
   font-weight: 600;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 7px 0 0 0;
+  margin: 0 0 0 14px;
 }
 
 /* FIRST Navigation area ------------------------------------------------------------------------------ */
@@ -87,7 +103,6 @@ a:hover.navOne {
 }
 
 /* END (FIRST Navigation area) ------------------------------------------------------------------------- */
-/* END (HEADER CONTENT) -------------------------------------------------------------------------------- */
 
 .oneSec {
   width: 100%;
@@ -193,114 +208,7 @@ img.siteReviewsImage {
 
 /* END (FLEXBOX ONE content) ---------------------------------------------------------------------------- */
 
-/* FLEX TWO/3 content ----------------------------------------------------------------------------------- */
 
-.flexTwo {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1280px;
-  height: 620px;
-  margin: 0 auto;
-}
-
-.popularChallengesWrapper {
-  display:flex;
-  flex-direction: row;
-  column-gap: 4%;
-  overflow: auto;
-  white-space: wrap;
-  width: 1200px;
-  height: 506px;
-  padding-left: 52px;
-}
-
-h2 {
-  font-size: 28px;
-  font-weight: 400;
-  margin: 0 auto;
-  padding-bottom: 40px;
-}
-
-h3 {
-  font-size: 28px;
-  font-weight: 400;
-  padding: 7px 0 0 0;
-  margin: 0 0 0 14px;
-}
-
-.popuChallengesStars {
-  display: block;
-  float: left;
-  width: 150px;
-  text-align: left;
-  padding: 0 0 0 17px;
-}
-
-.popuChallengesParticipants {
-  display: block;
-  float: right;
-  width: 150px;
-  text-align: right;
-  font-size: 14px;
-  font-weight: 400;
-  padding: 0 0 0 0;
-  margin-right: 10px;
-}
-
-.starChecked {
-  padding-right: 5px;
-}
-
-.starUnChecked {
-  padding-right: 5px;
-}
-
-.threeFlexTwo {
-  width: 363px;
-  height: 446px;
-  background-color: white;
-  margin-top: 14px;
-  border-radius: 8px;
-  box-shadow: 0 0 5px 3px rgba(100, 100, 100, .1), 0 0 5px 3px rgba(100, 100, 100, .1);
-  position: relative;
-
-  :hover.threeFlexTwo {
-    box-shadow: 0 0 10px 3px rgba(100, 100, 100, .2), 0 0 7px 3px rgba(100, 100, 100, .2);
-}
-}
-
-.popularChallengeImage {
-  width: 362px;
-  height: auto;
-}
-
-.popuChallengesInfoDiv {
-  width: 363px;
-  height: 140px;
-  position: absolute;
-  bottom: 0;
-  border-radius: 8px;
-}
-
-.popuChallengesInfo {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 0 6px 0 17px;
-}
-
-.popuChallengesButton {
-  width: 179.28px;
-  height: 44px;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  background-color: var(--redColor);
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
-/* END (FLEX TWO/3 content) ----------------------------------------------------------------------------- */
 
 /* SECOND TWO buttons ----------------------------------------------------------------------------------- */
 
@@ -456,26 +364,26 @@ footer {
   height: 566px;
   background-color: var(--blackColor);
 
-.secondNav {
-  text-align: left;
-  padding-top: 7px;
-  padding-left: 20px;
-}
+  .secondNav {
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 20px;
+  }
 
-.abroadNav {
-  text-align: left;
-  padding-top: 7px;
-  padding-left: 20px;
-}
+  .abroadNav {
+    text-align: left;
+    padding-top: 7px;
+    padding-left: 20px;
+  }
 
-.secondNavSpan {
-  display: block;
-}
+  .secondNavSpan {
+    display: block;
+  }
 
-.secondNavBreakrow::before {
-  content: '\a';
-  white-space: pre;
-}
+  .secondNavBreakrow::before {
+    content: '\a';
+    white-space: pre;
+  }
 }
 
 /* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
@@ -521,9 +429,9 @@ footer {
 }
 
 h3.headerFlexThree {
-font-size: 18px;
-font-weight: 700;
-padding-left: 7px;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 7px;
 }
 
 p.aboutTextFlexThree {
@@ -557,47 +465,47 @@ a:hover.navThree {
 /* @media queries ----------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 430px) {
-h2 {
-  font-size: 24px;
-}
+  h2 {
+    font-size: 24px;
+  }
 
-.textBoxTwoSec {
-  width: 100%;
-  height: 390px;
-  font-size: 20px;
-  padding-top: 60px;
-}
+  .textBoxTwoSec {
+    width: 100%;
+    height: 390px;
+    font-size: 20px;
+    padding-top: 60px;
+  }
 
-.quoteText {
-  font-size: 18px;
-}
+  .quoteText {
+    font-size: 18px;
+  }
 
-.quoteTextWho {
-  font-size: 14px;
-}
+  .quoteTextWho {
+    font-size: 14px;
+  }
 
-.squareGrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 300px 370px 300px 390px;
-  gap: 0;
-  width: 100%;
-}
+  .squareGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 370px 300px 390px;
+    gap: 0;
+    width: 100%;
+  }
 
-.textDivSquareGrid {
-  height: 330px;
-}
+  .textDivSquareGrid {
+    height: 330px;
+  }
 
-.aboutFlexThree {
-  width: 100%;
-  max-width: 390px;
-}
+  .aboutFlexThree {
+    width: 100%;
+    max-width: 390px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-h2 {
-  font-size: 24px;
-}
+  h2 {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (min-width: 560px) {
@@ -611,26 +519,26 @@ h2 {
     height: 400px;
   }
 
-.quoteText {
-  font-size: 24px;
-  font-weight: 400;
-  font-style: italic;
-  padding: 9px 24px 0 0;
-  word-wrap: break-all;
-}
+  .quoteText {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 9px 24px 0 0;
+    word-wrap: break-all;
+  }
 
-.quoteTextWho {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 5px 0 0 0;
-}
+  .quoteTextWho {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 0 0 0;
+  }
 
-.textBoxTwoSec {
-  width: 600px;
-  height: 390px;
-  font-size: 24px;
-  padding-top: 100px;
-}
+  .textBoxTwoSec {
+    width: 600px;
+    height: 390px;
+    font-size: 24px;
+    padding-top: 100px;
+  }
 }
 
 @media only screen and (min-width: 760px) {
@@ -647,98 +555,98 @@ h2 {
 
 @media only screen and (min-width: 911px) {
 
-.header {
+  .header {
     height: 216px;
-}
+  }
 
-.firstNav {
+  .firstNav {
     display: inline-block;
-}
+  }
 
-button {
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 600;
-}
+  button {
+    width: 308px;
+    height: 66px;
+    font-size: 24px;
+    font-weight: 600;
+  }
 
-.textDivSquareGrid {
-  width: 67%;
-  margin: 0 auto;
-  height: 370px;
-  position: relative;
-  padding-top: 38px;
-}
+  .textDivSquareGrid {
+    width: 67%;
+    margin: 0 auto;
+    height: 370px;
+    position: relative;
+    padding-top: 38px;
+  }
 
-.buttonBookSquareGrid {
-  position: absolute;
-  bottom: 80px;
-}
+  .buttonBookSquareGrid {
+    position: absolute;
+    bottom: 80px;
+  }
 
-.buttonChallengesSquareGrid {
-  position: absolute;
-  bottom: 80px;
-}
+  .buttonChallengesSquareGrid {
+    position: absolute;
+    bottom: 80px;
+  }
 
-.squareGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 460px 460px;
-  gap: 0;
-  width: 100%;
-  max-width: 1280px;
-  height: auto;
-  margin-bottom: 160px;
-}
+  .squareGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 460px 460px;
+    gap: 0;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin-bottom: 160px;
+  }
 
-.boxSquareGrid1 {
-  grid-column: 1;
-  grid-row: 1 / 1;
-  background-image: url('esc_imgs/nesa-by-makers-640x460.png');
-  width: 100%;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: center;
-}
+  .boxSquareGrid1 {
+    grid-column: 1;
+    grid-row: 1 / 1;
+    background-image: url('esc_imgs/nesa-by-makers-640x460.png');
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+  }
 
-.boxSquareGrid2 {
-  grid-column: 2;
-  grid-row: 1 / 2;
-  width: 100%;
-  position: relative;
-}
+  .boxSquareGrid2 {
+    grid-column: 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    position: relative;
+  }
 
-.boxSquareGrid3 {
-  grid-column: 1;
-  grid-row: 2 / 2;
-  margin-bottom: 50px;
-  width: 100%;
-  position: relative;
-}
+  .boxSquareGrid3 {
+    grid-column: 1;
+    grid-row: 2 / 2;
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+  }
 
-.boxSquareGrid4 {
-  grid-column: 2;
-  grid-row: 2 / 2;
-  background-image: url('esc_imgs/kelly-sikkema-img-640x460.png');
-  width: 100%;
-  margin: 0 auto;
-  background-size: cover;
-  background-position: center;
-}
+  .boxSquareGrid4 {
+    grid-column: 2;
+    grid-row: 2 / 2;
+    background-image: url('esc_imgs/kelly-sikkema-img-640x460.png');
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+  }
 
-.inlineBlock2 {
-  width: 500px;
-  left: 178px;
-  top: 33px;
-}
+  .inlineBlock2 {
+    width: 500px;
+    left: 178px;
+    top: 33px;
+  }
 
   h1.styleHone {
-  font-size: 40px;
-}
+    font-size: 40px;
+  }
 
-h1 span {
-  display: unset;
-}
+  h1 span {
+    display: unset;
+  }
 
   .oneSec {
     width: 100%;
@@ -822,61 +730,61 @@ h1 span {
     display: block;
   }
 
-footer {
-  height: 467px;
-}
+  footer {
+    height: 467px;
+  }
 
-.sectionWrapFlexThree {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
+  .sectionWrapFlexThree {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-.aboutFlexThree {
-  flex: 33%;
-  height: auto;
-  padding: 130px 200px 0 100px;
-}
+  .aboutFlexThree {
+    flex: 33%;
+    height: auto;
+    padding: 130px 200px 0 100px;
+  }
 
-.navBoxFlexThree {
-  flex: 13%;
-  height: auto;
-  padding-top: 130px;
-}
+  .navBoxFlexThree {
+    flex: 13%;
+    height: auto;
+    padding-top: 130px;
+  }
 
-.navAbroadFlexThree  {
-  flex: 22%;
-  height: auto;
-  padding-top: 130px;
-}
+  .navAbroadFlexThree {
+    flex: 22%;
+    height: auto;
+    padding-top: 130px;
+  }
 }
 
 @media only screen and (max-width: 960px) {
-a.navOne {
-  font-size: 22px;
-  padding: 0 30px 0 30px;
-}
+  a.navOne {
+    font-size: 22px;
+    padding: 0 30px 0 30px;
+  }
 }
 
 @media only screen and (max-width: 980px) {
 
-h2.squareGridHtwo {
-  font-size: 26px;
-}
+  h2.squareGridHtwo {
+    font-size: 26px;
+  }
 
-p.pSquaregrid {
-  font-size: 20px;
-}
+  p.pSquaregrid {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 1166px) {
-.buttonBookSquareGrid {
-  position: absolute;
-  bottom: 40px;
-}
+  .buttonBookSquareGrid {
+    position: absolute;
+    bottom: 40px;
+  }
 
-.buttonChallengesSquareGrid {
-  position: absolute;
-  bottom: 40px;
-}
+  .buttonChallengesSquareGrid {
+    position: absolute;
+    bottom: 40px;
+  }
 }
