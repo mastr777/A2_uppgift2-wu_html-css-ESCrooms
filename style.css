@@ -1,6 +1,4 @@
-
 /* CSS for ESC - Hacker Escape Rooms, site */
-
 html {
   padding: 0;
   margin: 0;
@@ -17,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: lightgrey;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.2;
   letter-spacing: 0.1px;
 }
@@ -56,7 +54,6 @@ button {
 }
 
 /* HEADER CONTENT -------------------------------------------------------------------------------------- */
-
 .header {
   width: 100%;
   height: 144px;
@@ -102,7 +99,6 @@ h1 span {
 }
 
 /* FIRST Navigation area ------------------------------------------------------------------------------ */
-
 .firstNav {
   display: none;
   max-width: 1280px;
@@ -132,20 +128,18 @@ a:hover.navOne {
 
 /* END (FIRST Navigation area) ------------------------------------------------------------------------- */
 /* END (HEADER CONTENT) -------------------------------------------------------------------------------- */
-
 .oneSec {
   width: 100%;
   height: 274px;
-  background-image: url('esc_imgs/ESC_section-img_SMALLERv.png');
+  background-image: url("esc_imgs/ESC_section-img_SMALLERv.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* FIRST TWO buttons ----------------------------------------------------------------------------------- */
-
 .twoButtons {
-  width: 100%100;
+  width: 100% 100;
   max-width: 635px;
   padding-top: 40px;
   margin: 0 auto;
@@ -169,9 +163,7 @@ a:hover.navOne {
 }
 
 /* END (FIRST TWO buttons) ------------------------------------------------------------------------------ */
-
 /* FLEX ONE/2 content ----------------------------------------------------------------------------------- */
-
 .flexOne {
   display: flex;
   width: 100%;
@@ -236,9 +228,7 @@ img.siteReviewsImage {
 }
 
 /* END (FLEXBOX ONE content) ---------------------------------------------------------------------------- */
-
 /* FLEX TWO/3 content ----------------------------------------------------------------------------------- */
-
 .flexTwo {
   display: flex;
   flex-wrap: wrap;
@@ -248,7 +238,7 @@ img.siteReviewsImage {
 }
 
 .popularChallengesWrapper {
-  display:flex;
+  display: flex;
   flex-direction: row;
   column-gap: 4%;
   overflow: auto;
@@ -305,7 +295,7 @@ h3 {
   background-color: white;
   margin-top: 14px;
   border-radius: 8px;
-  box-shadow: 0 0 5px 3px rgba(100, 100, 100, .1), 0 0 5px 3px rgba(100, 100, 100, .1);
+  box-shadow: 0 0 5px 3px rgba(100, 100, 100, 0.1), 0 0 5px 3px rgba(100, 100, 100, 0.1);
   position: relative;
 }
 
@@ -341,11 +331,9 @@ h3 {
 }
 
 /* END (FLEX TWO/3 content) ----------------------------------------------------------------------------- */
-
 /* SECOND TWO buttons ----------------------------------------------------------------------------------- */
-
 .twoButtons2 {
-  width: 100%100;
+  width: 100% 100;
   height: 90px;
   max-width: 635px;
   padding: 0 0 80px 0;
@@ -368,7 +356,6 @@ h3 {
 }
 
 /* END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
-
 .twoSec {
   width: 100%;
   height: 500px;
@@ -398,7 +385,6 @@ h3 {
 }
 
 /* SQUARE GRID wrapper ----------------------------------------------------------------------------------- */
-
 .squareGrid {
   display: grid;
   grid-template-columns: 100%;
@@ -424,7 +410,7 @@ p.pSquaregrid {
 
 .boxSquareGrid1 {
   display: inline-block;
-  background-image: url('esc_imgs/nesa-by-makers-480x300.png');
+  background-image: url("esc_imgs/nesa-by-makers-480x300.png");
   background-size: contain;
   width: 100%;
   background-size: cover;
@@ -443,7 +429,7 @@ p.pSquaregrid {
 .boxSquareGrid3 {
   display: inline-block;
   grid-column: 1;
-  grid-row: 4 / 4;
+  grid-row: 4/4;
   color: var(--blackColor);
   width: 100%;
   word-wrap: break-word;
@@ -454,8 +440,8 @@ p.pSquaregrid {
 .boxSquareGrid4 {
   display: inline-block;
   grid-column: 1;
-  grid-row: 3 / 4;
-  background-image: url('esc_imgs/kelly-sikkema-480x300.png');
+  grid-row: 3/4;
+  background-image: url("esc_imgs/kelly-sikkema-480x300.png");
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -487,7 +473,6 @@ p.pSquaregrid {
 }
 
 /* END (SQUARE GRID wrapper) ------------------------------------------------------------------------------ */
-
 footer {
   max-width: 1280px;
   width: 100%;
@@ -512,12 +497,11 @@ footer {
 }
 
 .secondNavBreakrow::before {
-  content: '\a';
+  content: "\a";
   white-space: pre;
 }
 
 /* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
-
 .footerWrapFlexThree {
   width: 100%;
   height: 566px;
@@ -591,328 +575,269 @@ a:hover.navThree {
 }
 
 /* END (FLEX THREE/3 content) ----------------------------------------------------------------------------- */
-
 /* @media queries ----------------------------------------------------------------------------------------- */
-
 @media only screen and (max-width: 430px) {
-h2 {
-  font-size: 24px;
+  h2 {
+    font-size: 24px;
+  }
+  .textBoxTwoSec {
+    width: 100%;
+    height: 390px;
+    font-size: 20px;
+    padding-top: 60px;
+  }
+  .quoteText {
+    font-size: 18px;
+  }
+  .quoteTextWho {
+    font-size: 14px;
+  }
+  .squareGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 300px 370px 300px 390px;
+    gap: 0;
+    width: 100%;
+  }
+  .textDivSquareGrid {
+    height: 330px;
+  }
+  .aboutFlexThree {
+    width: 100%;
+    max-width: 390px;
+  }
 }
-
-.textBoxTwoSec {
-  width: 100%;
-  height: 390px;
-  font-size: 20px;
-  padding-top: 60px;
-}
-
-.quoteText {
-  font-size: 18px;
-}
-
-.quoteTextWho {
-  font-size: 14px;
-}
-
-.squareGrid {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 300px 370px 300px 390px;
-  gap: 0;
-  width: 100%;
-}
-
-.textDivSquareGrid {
-  height: 330px;
-}
-
-.aboutFlexThree {
-  width: 100%;
-  max-width: 390px;
-}
-}
-
 @media only screen and (max-width: 480px) {
-h2 {
-  font-size: 24px;
+  h2 {
+    font-size: 24px;
+  }
 }
-}
-
 @media only screen and (min-width: 560px) {
   .oneSec {
     height: 340px;
   }
 }
-
 @media only screen and (min-width: 700px) {
   .oneSec {
     height: 400px;
   }
-
-.quoteText {
-  font-size: 24px;
-  font-weight: 400;
-  font-style: italic;
-  padding: 9px 24px 0 0;
-  word-wrap: break-all;
+  .quoteText {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 9px 24px 0 0;
+    word-wrap: break-all;
+  }
+  .quoteTextWho {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px 0 0 0;
+  }
+  .textBoxTwoSec {
+    width: 600px;
+    height: 390px;
+    font-size: 24px;
+    padding-top: 100px;
+  }
 }
-
-.quoteTextWho {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 5px 0 0 0;
-}
-
-.textBoxTwoSec {
-  width: 600px;
-  height: 390px;
-  font-size: 24px;
-  padding-top: 100px;
-}
-}
-
 @media only screen and (min-width: 760px) {
   .oneSec {
     height: 460px;
   }
 }
-
 @media only screen and (max-width: 910px) {
   .oneFlexOne {
     margin: 0 auto;
   }
 }
-
 @media only screen and (min-width: 911px) {
-
-.header {
+  .header {
     height: 216px;
-}
-
-.firstNav {
+  }
+  .firstNav {
     display: inline-block;
-}
-
-button {
-  width: 308px;
-  height: 66px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.textDivSquareGrid {
-  width: 67%;
-  margin: 0 auto;
-  height: 370px;
-  position: relative;
-  padding-top: 38px;
-}
-
-.buttonBookSquareGrid {
-  position: absolute;
-  bottom: 80px;
-}
-
-.buttonChallengesSquareGrid {
-  position: absolute;
-  bottom: 80px;
-}
-
-.squareGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 460px 460px;
-  gap: 0;
-  width: 100%;
-  max-width: 1280px;
-  height: auto;
-  margin-bottom: 160px;
-}
-
-.boxSquareGrid1 {
-  grid-column: 1;
-  grid-row: 1 / 1;
-  background-image: url('esc_imgs/nesa-by-makers-640x460.png');
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.boxSquareGrid2 {
-  grid-column: 2;
-  grid-row: 1 / 2;
-  width: 100%;
-  position: relative;
-}
-
-.boxSquareGrid3 {
-  grid-column: 1;
-  grid-row: 2 / 2;
-  margin-bottom: 50px;
-  width: 100%;
-  position: relative;
-}
-
-.boxSquareGrid4 {
-  grid-column: 2;
-  grid-row: 2 / 2;
-  background-image: url('esc_imgs/kelly-sikkema-img-640x460.png');
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-}
-
-.inlineBlock2 {
-  width: 500px;
-  left: 178px;
-  top: 33px;
-}
-
+  }
+  button {
+    width: 308px;
+    height: 66px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .textDivSquareGrid {
+    width: 67%;
+    margin: 0 auto;
+    height: 370px;
+    position: relative;
+    padding-top: 38px;
+  }
+  .buttonBookSquareGrid {
+    position: absolute;
+    bottom: 80px;
+  }
+  .buttonChallengesSquareGrid {
+    position: absolute;
+    bottom: 80px;
+  }
+  .squareGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 460px 460px;
+    gap: 0;
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+    margin-bottom: 160px;
+  }
+  .boxSquareGrid1 {
+    grid-column: 1;
+    grid-row: 1/1;
+    background-image: url("esc_imgs/nesa-by-makers-640x460.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .boxSquareGrid2 {
+    grid-column: 2;
+    grid-row: 1/2;
+    width: 100%;
+    position: relative;
+  }
+  .boxSquareGrid3 {
+    grid-column: 1;
+    grid-row: 2/2;
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+  }
+  .boxSquareGrid4 {
+    grid-column: 2;
+    grid-row: 2/2;
+    background-image: url("esc_imgs/kelly-sikkema-img-640x460.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .inlineBlock2 {
+    width: 500px;
+    left: 178px;
+    top: 33px;
+  }
   h1.styleHone {
-  font-size: 40px;
-}
-
-h1 span {
-  display: unset;
-}
-
+    font-size: 40px;
+  }
+  h1 span {
+    display: unset;
+  }
   .oneSec {
     width: 100%;
     height: 468px;
-    background-image: url('esc_imgs/ESC_section-img_BIG.png');
+    background-image: url("esc_imgs/ESC_section-img_BIG.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
-
   .twoButtons {
     height: 70px;
   }
-
   .buttonChallengeTwo {
     display: inline-block;
     left: 0;
     position: absolute;
     top: -35px;
   }
-
   .buttonChallengeOne {
     position: absolute;
     right: 0;
     top: -35px;
   }
-
   .linkHidden {
     display: none;
   }
-
   .twoButtons2 {
     height: 80px;
     padding-top: 60px;
   }
-
   .buttonChallengeTwo2 {
     display: inline-block;
     left: 0;
     position: absolute;
   }
-
   .buttonChallengeOne2 {
     position: absolute;
     right: 0;
   }
-
   .linkHidden2 {
     display: none;
   }
-
   .flexOne {
     flex-direction: row;
   }
-
   .oneFlexOne {
     margin-left: auto;
   }
-
   .twoFlexOne {
     display: block;
   }
-
   .siteReviews {
     max-width: 560px;
   }
-
   .siteReviewsDiv1 {
     width: 130px;
   }
-
   .quoteTextWho {
     padding: 14px 0 0 0;
   }
-
   img.siteReviewsImage {
     width: 96px;
   }
-
   .siteReviewsTimeBlock {
     display: block;
   }
-
-footer {
-  height: 467px;
+  footer {
+    height: 467px;
+  }
+  .sectionWrapFlexThree {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .aboutFlexThree {
+    flex: 33%;
+    height: auto;
+    padding: 130px 200px 0 100px;
+  }
+  .navBoxFlexThree {
+    flex: 13%;
+    height: auto;
+    padding-top: 130px;
+  }
+  .navAbroadFlexThree {
+    flex: 22%;
+    height: auto;
+    padding-top: 130px;
+  }
 }
-
-.sectionWrapFlexThree {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.aboutFlexThree {
-  flex: 33%;
-  height: auto;
-  padding: 130px 200px 0 100px;
-}
-
-.navBoxFlexThree {
-  flex: 13%;
-  height: auto;
-  padding-top: 130px;
-}
-
-.navAbroadFlexThree  {
-  flex: 22%;
-  height: auto;
-  padding-top: 130px;
-}
-}
-
 @media only screen and (max-width: 960px) {
-a.navOne {
-  font-size: 22px;
-  padding: 0 30px 0 30px;
+  a.navOne {
+    font-size: 22px;
+    padding: 0 30px 0 30px;
+  }
 }
-}
-
 @media only screen and (max-width: 980px) {
-
-h2.squareGridHtwo {
-  font-size: 26px;
+  h2.squareGridHtwo {
+    font-size: 26px;
+  }
+  p.pSquaregrid {
+    font-size: 20px;
+  }
 }
-
-p.pSquaregrid {
-  font-size: 20px;
-}
-}
-
 @media only screen and (max-width: 1166px) {
-.buttonBookSquareGrid {
-  position: absolute;
-  bottom: 40px;
-}
-
-.buttonChallengesSquareGrid {
-  position: absolute;
-  bottom: 40px;
-}
+  .buttonBookSquareGrid {
+    position: absolute;
+    bottom: 40px;
+  }
+  .buttonChallengesSquareGrid {
+    position: absolute;
+    bottom: 40px;
+  }
 }
