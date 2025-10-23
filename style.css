@@ -181,8 +181,9 @@ a:hover.navOne {
 }
 
 .siteReviews {
-  height: 200px;
+  width: 100%;
   max-width: 460px;
+  height: 200px;
   text-align: left;
   margin-top: 20px;
 }
@@ -400,7 +401,7 @@ h3 {
 
 .squareGrid {
   display: grid;
-  grid-template-columns: 480px;
+  grid-template-columns: 100%;
   grid-template-rows: 300px 370px 300px 390px;
   gap: 0;
   width: 100%;
@@ -528,13 +529,13 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   column-gap: 0;
-  width: 480px;
+  width: 100%;
   height: auto;
   position: relative;
 }
 
 .aboutFlexThree {
-  width: 480px;
+  width: 100%;
   height: auto;
   padding-top: 50px;
   font-size: 1.16em;
@@ -542,7 +543,7 @@ footer {
 }
 
 .navBoxFlexThree {
-  width: 480px;
+  width: 100%;
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -550,7 +551,7 @@ footer {
 }
 
 .navAbroadFlexThree {
-  width: 480px;
+  width: 100%;
   height: auto;
   padding-top: 30px;
   padding-bottom: 20px;
@@ -593,7 +594,7 @@ a:hover.navThree {
 
 /* @media queries ----------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
 h2 {
   font-size: 24px;
 }
@@ -603,6 +604,14 @@ h2 {
   height: 390px;
   font-size: 20px;
   padding-top: 60px;
+}
+
+.quoteText {
+  font-size: 18px;
+}
+
+.quoteTextWho {
+  font-size: 14px;
 }
 
 .squareGrid {
