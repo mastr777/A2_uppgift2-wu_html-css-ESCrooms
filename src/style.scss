@@ -293,12 +293,7 @@ footer {
   height: 566px;
   background-color: var(--blackColor);
 
-  .secondNav {
-    text-align: left;
-    padding-top: 7px;
-    padding-left: 20px;
-  }
-
+  .secondNav,
   .abroadNav {
     text-align: left;
     padding-top: 7px;
@@ -314,7 +309,6 @@ footer {
     white-space: pre;
   }
 }
-
 /* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
 
 .footerWrapFlexThree {
@@ -438,9 +432,9 @@ a:hover.navThree {
 }
 
 @media only screen and (min-width: 560px) {
-  .oneSec {
-    height: 340px;
-  }
+.oneSec {
+  height: 340px;
+}
 
 .threeFlexTwo {
   width: 363px;
@@ -684,7 +678,7 @@ a:hover.navThree {
   .aboutFlexThree {
     flex: 33%;
     height: auto;
-    padding: 130px 200px 0 100px;
+    padding: 130px 150px 0 100px;
   }
 
   .navBoxFlexThree {
