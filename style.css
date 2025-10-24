@@ -63,7 +63,7 @@ h3 {
   margin: 0 0 0 14px;
 }
 
-/* HEADER content */
+/* #region HEADER content */
 .header {
   width: 100%;
   height: 144px;
@@ -113,7 +113,8 @@ figure {
   padding: 0;
 }
 
-/* FLEX ONE/2 content ----------------------------------------------------------------------------------- */
+/* #endregion END (HEADER content) */
+/* #region FLEX ONE/2 content ----------------------------------------------------------------------------------- */
 .flexOne {
   display: flex;
   width: 100%;
@@ -177,8 +178,8 @@ img.siteReviewsImage {
   display: inline-block;
 }
 
-/* END (FLEXBOX ONE content) ---------------------------------------------------------------------------- */
-/* FLEX TWO/3 content */
+/* #endregion END (FLEXBOX ONE content) ---------------------------------------------------------------------------- */
+/* #region FLEX TWO/3 content -------------------------------------------------------------------------- */
 .flexTwo {
   display: flex;
   flex-wrap: wrap;
@@ -271,7 +272,8 @@ img.siteReviewsImage {
   padding-right: 5px;
 }
 
-/* FIRST Navigation area ------------------------------------------------------------------------------ */
+/* #endregion END (FLEX TWO/3 content) ------------------------------------------------------------------ */
+/* #region FIRST Navigation area ------------------------------------------------------------------------------ */
 .firstNav {
   display: none;
   max-width: 1280px;
@@ -299,7 +301,7 @@ a:hover.navOne {
   padding: 14px 20px 0 20px;
 }
 
-/* END (FIRST Navigation area) ------------------------------------------------------------------------- */
+/* #endregion END (FIRST Navigation area) ------------------------------------------------------------------------- */
 .oneSec {
   width: 100%;
   height: 274px;
@@ -309,7 +311,7 @@ a:hover.navOne {
   background-repeat: no-repeat;
 }
 
-/* FIRST TWO buttons ----------------------------------------------------------------------------------- */
+/* #region FIRST TWO buttons ----------------------------------------------------------------------------------- */
 .twoButtons {
   width: 100%;
   max-width: 635px;
@@ -334,8 +336,8 @@ a:hover.navOne {
   background-color: var(--redColor);
 }
 
-/* END (FIRST TWO buttons) ------------------------------------------------------------------------------ */
-/* SECOND TWO buttons ----------------------------------------------------------------------------------- */
+/* #endregion END (FIRST TWO buttons) ------------------------------------------------------------------------------ */
+/* #region SECOND TWO buttons ----------------------------------------------------------------------------------- */
 .twoButtons2 {
   width: 100%;
   height: 90px;
@@ -359,7 +361,7 @@ a:hover.navOne {
   background-color: var(--redColor);
 }
 
-/* END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
+/* #endregion END (SECOND TWO buttons) ----------------------------------------------------------------------------- */
 .twoSec {
   width: 100%;
   height: 500px;
@@ -388,7 +390,7 @@ a:hover.navOne {
   border-radius: 4px;
 }
 
-/* SQUARE GRID wrapper ----------------------------------------------------------------------------------- */
+/* #region SQUARE GRID wrapper ----------------------------------------------------------------------------------- */
 .squareGrid {
   display: grid;
   grid-template-columns: 100%;
@@ -478,7 +480,7 @@ p.pSquaregrid {
   bottom: 40px;
 }
 
-/* END (SQUARE GRID wrapper) ------------------------------------------------------------------------------ */
+/* #endregion END (SQUARE GRID wrapper) ------------------------------------------------------------------------------ */
 footer {
   max-width: 1280px;
   width: 100%;
@@ -502,7 +504,7 @@ footer .secondNavBreakrow::before {
   white-space: pre;
 }
 
-/* FLEX THREE/3 content ----------------------------------------------------------------------------------- */
+/* #region FLEX THREE/3 content ----------------------------------------------------------------------------------- */
 .footerWrapFlexThree {
   width: 100%;
   height: 566px;
@@ -575,8 +577,8 @@ a:hover.navThree {
   color: var(--lightblueColor);
 }
 
-/* END (FLEX THREE/3 content) ----------------------------------------------------------------------------- */
-/* @media queries ----------------------------------------------------------------------------------------- */
+/* #endregion END (FLEX THREE/3 content) ----------------------------------------------------------------------------- */
+/* #region @media queries ----------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 430px) {
   h2 {
     font-size: 24px;
@@ -911,3 +913,5 @@ a:hover.navThree {
     bottom: 40px;
   }
 }
+
+/* #endregion END (@media queries) ----------------------------------------------------------------------------- */
