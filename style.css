@@ -32,9 +32,7 @@ p {
   margin: 0;
 }
 
-a:link,
-a:visited,
-aonlineChallengesLink {
+a:link, a:visited, aonlineChallengesLink {
   color: var(--darkerBlueColor);
   font-size: 16px;
   font-weight: 600;
@@ -70,6 +68,14 @@ h3 {
   background-color: var(--blackColor);
   text-align: left;
   position: relative;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 36px;
+  position: absolute;
+  top: 26px;
+  right: 26px;
 }
 
 .insideHeaderDiv {
@@ -487,18 +493,15 @@ footer {
   height: 566px;
   background-color: var(--blackColor);
 }
-
 footer .secondNav,
 footer .abroadNav {
   text-align: left;
   padding-top: 7px;
   padding-left: 20px;
 }
-
 footer .secondNavSpan {
   display: block;
 }
-
 footer .secondNavBreakrow::before {
   content: "\a";
   white-space: pre;
@@ -583,22 +586,18 @@ a:hover.navThree {
   h2 {
     font-size: 24px;
   }
-
   .textBoxTwoSec {
     width: 100%;
     height: 390px;
     font-size: 20px;
     padding-top: 60px;
   }
-
   .quoteText {
     font-size: 18px;
   }
-
   .quoteTextWho {
     font-size: 14px;
   }
-
   .squareGrid {
     display: grid;
     grid-template-columns: 100%;
@@ -606,46 +605,37 @@ a:hover.navThree {
     gap: 0;
     width: 100%;
   }
-
   .textDivSquareGrid {
     height: 330px;
   }
-
   .aboutFlexThree {
     width: 100%;
     max-width: 390px;
   }
 }
-
 @media only screen and (max-width: 480px) {
   h2 {
     font-size: 24px;
   }
 }
-
 @media only screen and (min-width: 560px) {
   .oneSec {
     height: 340px;
   }
-
   .threeFlexTwo {
     width: 363px;
   }
-
   .popuChallengesImage {
     width: 363px;
   }
-
   .popuChallengesInfoDiv {
     width: 363px;
   }
 }
-
 @media only screen and (min-width: 700px) {
   .oneSec {
     height: 400px;
   }
-
   .quoteText {
     font-size: 24px;
     font-weight: 400;
@@ -653,13 +643,11 @@ a:hover.navThree {
     padding: 9px 24px 0 0;
     word-wrap: break-all;
   }
-
   .quoteTextWho {
     font-size: 18px;
     font-weight: 400;
     padding: 5px 0 0 0;
   }
-
   .textBoxTwoSec {
     width: 600px;
     height: 390px;
@@ -667,35 +655,29 @@ a:hover.navThree {
     padding-top: 100px;
   }
 }
-
 @media only screen and (min-width: 760px) {
   .oneSec {
     height: 460px;
   }
 }
-
 @media only screen and (max-width: 910px) {
   .oneFlexOne {
     margin: 0 auto;
   }
 }
-
 @media only screen and (min-width: 911px) {
   .header {
     height: 216px;
   }
-
   .firstNav {
     display: inline-block;
   }
-
   button {
     width: 308px;
     height: 66px;
     font-size: 24px;
     font-weight: 600;
   }
-
   .textDivSquareGrid {
     width: 67%;
     margin: 0 auto;
@@ -703,17 +685,14 @@ a:hover.navThree {
     position: relative;
     padding-top: 38px;
   }
-
   .buttonBookSquareGrid {
     position: absolute;
     bottom: 80px;
   }
-
   .buttonChallengesSquareGrid {
     position: absolute;
     bottom: 80px;
   }
-
   .squareGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -724,7 +703,6 @@ a:hover.navThree {
     height: auto;
     margin-bottom: 160px;
   }
-
   .boxSquareGrid1 {
     grid-column: 1;
     grid-row: 1/1;
@@ -734,14 +712,12 @@ a:hover.navThree {
     background-size: cover;
     background-position: center;
   }
-
   .boxSquareGrid2 {
     grid-column: 2;
     grid-row: 1/2;
     width: 100%;
     position: relative;
   }
-
   .boxSquareGrid3 {
     grid-column: 1;
     grid-row: 2/2;
@@ -749,7 +725,6 @@ a:hover.navThree {
     width: 100%;
     position: relative;
   }
-
   .boxSquareGrid4 {
     grid-column: 2;
     grid-row: 2/2;
@@ -759,21 +734,17 @@ a:hover.navThree {
     background-size: cover;
     background-position: center;
   }
-
   .inlineBlock2 {
     width: 500px;
     left: 178px;
     top: 33px;
   }
-
   h1.styleHone {
     font-size: 40px;
   }
-
   h1 span {
     display: unset;
   }
-
   .oneSec {
     width: 100%;
     height: 468px;
@@ -782,136 +753,109 @@ a:hover.navThree {
     background-size: cover;
     background-repeat: no-repeat;
   }
-
   .twoButtons {
     height: 70px;
   }
-
   .buttonChallengeTwo {
     display: inline-block;
     left: 0;
     position: absolute;
     top: -35px;
   }
-
   .buttonChallengeOne {
     position: absolute;
     right: 0;
     top: -35px;
   }
-
   .linkHidden {
     display: none;
   }
-
   .twoButtons2 {
     height: 80px;
     padding-top: 60px;
   }
-
   .buttonChallengeTwo2 {
     display: inline-block;
     left: 0;
     position: absolute;
   }
-
   .buttonChallengeOne2 {
     position: absolute;
     right: 0;
   }
-
   .linkHidden2 {
     display: none;
   }
-
   .flexOne {
     flex-direction: row;
   }
-
   .oneFlexOne {
     margin-left: auto;
   }
-
   .twoFlexOne {
     display: block;
   }
-
   .siteReviews {
     max-width: 560px;
   }
-
   .siteReviewsDiv1 {
     width: 130px;
   }
-
   .quoteTextWho {
     padding: 14px 0 0 0;
   }
-
   img.siteReviewsImage {
     width: 96px;
   }
-
   .siteReviewsTimeBlock {
     display: block;
   }
-
   footer {
     height: 467px;
   }
-
   .sectionWrapFlexThree {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-
   .aboutFlexThree {
     flex: 33%;
     height: auto;
     padding: 130px 150px 0 100px;
   }
-
   .navBoxFlexThree {
     flex: 13%;
     height: auto;
     padding-top: 130px;
   }
-
   .navAbroadFlexThree {
     flex: 22%;
     height: auto;
     padding-top: 130px;
   }
 }
-
 @media only screen and (max-width: 960px) {
   a.navOne {
     font-size: 22px;
     padding: 0 30px 0 30px;
   }
 }
-
 @media only screen and (max-width: 980px) {
   h2.squareGridHtwo {
     font-size: 26px;
   }
-
   p.pSquaregrid {
     font-size: 20px;
   }
 }
-
 @media only screen and (max-width: 1166px) {
   .buttonBookSquareGrid {
     position: absolute;
     bottom: 40px;
   }
-
   .buttonChallengesSquareGrid {
     position: absolute;
     bottom: 40px;
   }
 }
-
 /* #endregion END (@media queries) ----------------------------------------------------------------------------- */
