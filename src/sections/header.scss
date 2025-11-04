@@ -58,3 +58,36 @@ figure {
 }
 
 /* #endregion END (HEADER content) */
+/* #region FIRST Navigation area ------------------------------------------------------------------------------ */
+
+.mobileFirstNav {
+  display: none;
+}
+
+.firstNav {
+  max-width: 1280px;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+a.navOne {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  padding: 0 37px 0 37px;
+}
+
+a:hover.navOne {
+  color: var(--lightblueColor);
+}
+
+.firstNavSpan {
+  display: inline-block;
+  padding: 14px 20px 0 20px;
+}
+
+/* #endregion END (FIRST Navigation area) ------------------------------------------------------------------------- */
