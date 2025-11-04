@@ -3,36 +3,7 @@
 @use 'sections/flexOne.scss';
 @use 'sections/flexTwo-cards.scss';
 
-/* #region FIRST Navigation area ------------------------------------------------------------------------------ */
 
-.firstNav {
-  display: none;
-  max-width: 1280px;
-  width: 100%;
-  height: 70px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-}
-
-a.navOne {
-  font-size: 24px;
-  font-weight: 600;
-  color: white;
-  text-decoration: none;
-  padding: 0 37px 0 37px;
-}
-
-a:hover.navOne {
-  color: var(--lightblueColor);
-}
-
-.firstNavSpan {
-  display: inline-block;
-  padding: 14px 20px 0 20px;
-}
-
-/* #endregion END (FIRST Navigation area) ------------------------------------------------------------------------- */
 
 .oneSec {
   width: 100%;
@@ -382,9 +353,21 @@ a:hover.navThree {
 }
 
 @media only screen and (min-width: 700px) {
-  .oneSec {
-    height: 400px;
-  }
+.oneSec {
+  height: 400px;
+}
+
+.header {
+  height: 200px;
+}
+
+.fa-bars {
+  display: none;
+}
+
+  .mobileFirstNav {
+  display: block;
+}
 
   .quoteText {
     font-size: 24px;
@@ -408,15 +391,18 @@ a:hover.navThree {
   }
 }
 
-@media only screen and (min-width: 760px) {
-  .oneSec {
-    height: 460px;
-  }
-}
-
 @media only screen and (max-width: 910px) {
   .oneFlexOne {
     margin: 0 auto;
+  }
+
+  .firstNav {
+  height: 50px;
+  bottom: 0;
+}
+
+  .firstNavSpan { 
+    padding: 0; margin: 0;
   }
 }
 
