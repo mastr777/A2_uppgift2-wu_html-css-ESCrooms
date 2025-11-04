@@ -4,8 +4,9 @@
   "description": "A2 inlämning 2: Startsida för [ESC] Hacker Escape Rooms",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "sass --no-source-map src/style.scss style.css",
-    "watch-sass": "sass --watch --no-source-map src/style.scss style.css"
+    "start": "node app.js",
+    "sass": "sass --watch --no-source-map src/style.scss style.css",
+    "compile-sass": "sass --no-source-map src/style.scss style.css"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
     "url": "https://github.com/mastr777/A2_uppgift2-wu_html-css-ESCrooms/issues"
   },
   "homepage": "https://github.com/mastr777/A2_uppgift2-wu_html-css-ESCrooms#readme",
-  "dependencies": {
-    "sass": "^1.93.2"
+  "devDependencies": {
+    "sass": "^1.93.3"
   }
 }
