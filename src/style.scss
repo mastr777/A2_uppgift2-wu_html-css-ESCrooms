@@ -365,8 +365,14 @@ a:hover.navThree {
   display: none;
 }
 
-  .mobileFirstNav {
+.fa-close {
+  display: none;
+}
+
+.mobileFirstNav {
   display: block;
+  position: unset;
+  background-color: unset;
 }
 
   .quoteText {
