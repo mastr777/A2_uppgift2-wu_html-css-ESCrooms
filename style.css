@@ -719,16 +719,19 @@ a:hover.navThree {
   }
   .fa-close {
     display: none;
+    animation: none;
   }
   .mobileFirstNav {
     display: block;
     position: unset;
     background-color: unset;
+    animation: none;
   }
   .mobileFirstNavIn {
     display: block;
     position: unset;
     background-color: unset;
+    animation: none;
   }
   .firstNav {
     max-width: 1280px;
