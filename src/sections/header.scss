@@ -63,10 +63,26 @@ figure {
 
 .fa-close {
   color: white;
+  opacity: 0;
+  visibility: hidden;
   font-size:36px;
   position: fixed;
   top: 20px;
   right: 26px;
+  animation: closeAnima 0.3s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes closeAnima {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
 }
 
 .mobileFirstNav {
@@ -76,8 +92,23 @@ figure {
   width: 100vw;
   height: 100vh;
   top: 0;
-
   background-color: rgba($color: #bbbbbb, $alpha: .5);
+  animation: mobileDivAnima 0.16s linear;
+}
+
+@keyframes mobileDivAnima {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    100% {
+      background-color: rgba($color: #bbbbbb, $alpha: .5);
+      opacity: 1;
+    }
 }
 
 .mobileFirstNavIn {
@@ -87,6 +118,28 @@ figure {
   margin: 0 auto;
   margin-top: 20px;
   background-color: var(--blackColor);
+  animation: mobileInAnima 0.3s linear;
+}
+
+@keyframes mobileInAnima {
+    0% {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    25% {
+      opacity: 0.5;
+    }
+
+    75% {
+      opacity: 0.7;
+    }
+
+    100% {
+      background-color: var(--blackColor);
+      transform: scale(1);
+      opacity: 1;
+    }
 }
 
 .firstNav {
